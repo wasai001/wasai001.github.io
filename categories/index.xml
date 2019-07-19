@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on Mainroad</title>
+    <title>Categories on 大数据时代 | Era of Big Data</title>
     <link>/categories/</link>
-    <description>Recent content in Categories on Mainroad</description>
+    <description>Recent content in Categories on 大数据时代 | Era of Big Data</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 16 Apr 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 08 Jul 2019 15:48:56 -0700</lastBuildDate>
     
 	<atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Development</title>
-      <link>/categories/development/</link>
-      <pubDate>Mon, 16 Apr 2018 00:00:00 +0000</pubDate>
+      <title>中文文章</title>
+      <link>/categories/%E4%B8%AD%E6%96%87%E6%96%87%E7%AB%A0/</link>
+      <pubDate>Mon, 08 Jul 2019 15:48:56 -0700</pubDate>
       
-      <guid>/categories/development/</guid>
+      <guid>/categories/%E4%B8%AD%E6%96%87%E6%96%87%E7%AB%A0/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>golang</title>
-      <link>/categories/golang/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      <title>English Posts</title>
+      <link>/categories/english-posts/</link>
+      <pubDate>Mon, 16 Apr 2018 00:00:00 +0000</pubDate>
       
-      <guid>/categories/golang/</guid>
+      <guid>/categories/english-posts/</guid>
       <description></description>
     </item>
     

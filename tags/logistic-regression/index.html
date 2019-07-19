@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Logistic Regression - 大数据时代 | Era of Big Data</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+	<meta property="og:title" content="Logistic Regression" />
+<meta property="og:description" content="Shuai Ma&#39;s personal blog about big　data and data science" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="/tags/logistic-regression/" />
+
+<meta property="og:updated_time" content="2019-07-08T15:48:56-07:00"/>
+
+	
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="alternate" type="application/rss+xml" href="/tags/logistic-regression/index.xml" title="大数据时代 | Era of Big Data">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+	<link rel="stylesheet" href="/css/style.css">
+	
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container">
+		<div class="logo">
+			<a class="logo__link" href="/" title="大数据时代 | Era of Big Data" rel="home">
+				<div class="logo__title">大数据时代 | Era of Big Data</div>
+				<div class="logo__tagline">用简单的语言讲大数据 | Talk about big data with plain language</div>
+			</a>
+		</div>
+		
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">Menu</span>
+	</button>
+	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="/posts/englishposts/">English Posts</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/posts/migrate-from-jekyll/">Jekyll migration</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/posts/chineseposts/">中文文章</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/posts/goisforlovers/">(Hu)go Template Primer</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/posts/hugoisforlovers/">Getting Started with Hugo</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/about/">关于本站 | about site</a>
+		</li>
+	</ul>
+</nav>
+
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main list" role="main">
+	<header class="main__header">
+		<h1 class="main__title">Logistic Regression</h1>
+	</header><article class="list__item post">
+	<header class="list__header">
+		<h3 class="list__title post__title ">
+			<a href="/posts/mymd/" rel="bookmark">
+			SparkRDD及SparkML在语义分析中的应用
+			</a>
+		</h3>
+		<div class="list__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg>
+	<time class="meta__text" datetime="2019-07-08T15:48:56">July 08, 2019</time>
+</div>
+
+<div class="meta__item-categories meta__item">
+	<svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg>
+	<span class="meta__text"><a class="meta__link" href="/categories/%e4%b8%ad%e6%96%87%e6%96%87%e7%ab%a0" rel="category">中文文章</a></span>
+</div>
+</div>
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		以下为使用SparkRDD储存一百六十万推特用户留言。使用一百六十万数据中的98%数据训练SparkML机器学习模型库中的HashingTF + IDF + Logistic Regression模型。最终使用训练模型预测2%实验数据，并对比准确率。
+Unzip the file import zipfile with zipfile.ZipFile(&quot;./trainingandtestdata/training.1600000.processed.noemoticon.zip&quot;, &quot;r&quot;) as z: z.extractall(&quot;./trainingandtestdata&quot;)  Load and explore the data import pandas as pd import numpy as np import matplotlib.pyplot as plt plt.style.use('fivethirtyeight') %matplotlib inline %config InlineBackend.figure_format = 'retina' cols = ['sentiment','id','date','query_string','user','text'] df = pd.read_csv(&quot;./trainingandtestdata/training.1600000.processed.noemoticon.csv&quot;,header=None, names=cols, encoding = 'ISO-8859-1') # df = pd.read_csv(&quot;./trainingandtestdata/training.1600000.processed.noemoticon.csv&quot;,header=None, names=cols,encoding='latin-1') # above line will be different depending on where you saved your data, and your file name df.
+	</div>
+</article>
+</main>
+
+
+			</div>
+			
+<aside class="sidebar"><div class="widget-search widget">
+	<form class="widget-search__form" role="search" method="get" action="https://google.com/search">
+		<label>
+			<input class="widget-search__field" type="search" placeholder="SEARCH..." value="" name="q" aria-label="SEARCH...">
+		</label>
+		<input class="widget-search__submit" type="submit" value="Search">
+		<input type="hidden" name="sitesearch" value="/" />
+	</form>
+</div>
+<div class="widget-categories widget">
+	<h4 class="widget__title">Categories</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/categories/english-posts">English posts</a></li>
+			<li class="widget__item"><a class="widget__link" href="/categories/%e4%b8%ad%e6%96%87%e6%96%87%e7%ab%a0">中文文章</a></li>
+		</ul>
+	</div>
+</div>
+<div class="widget-taglist widget">
+	<h4 class="widget__title">Tags</h4>
+	<div class="widget__content">
+		<a class="widget-taglist__link widget__link btn" href="/tags/basic-elements" title="Basic elements">Basic elements</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/css" title="Css">Css</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/development" title="Development">Development</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/go" title="Go">Go</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/golang" title="Golang">Golang</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/html" title="Html">Html</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/hugo" title="Hugo">Hugo</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/idf" title="Idf">Idf</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/logistic-regression" title="Logistic regression">Logistic regression</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/spark" title="Spark">Spark</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/templates" title="Templates">Templates</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/themes" title="Themes">Themes</a>
+	</div>
+</div>
+<div class="widget-recent widget">
+	<h4 class="widget__title">Recent Posts</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/posts/chineseposts/">中文文章&#34;</a></li>
+			<li class="widget__item"><a class="widget__link" href="/posts/englishposts/">English Posts List</a></li>
+			<li class="widget__item"><a class="widget__link" href="/posts/mymd/">SparkRDD及SparkML在语义分析中的应用</a></li>
+			<li class="widget__item"><a class="widget__link" href="/posts/my-first/">My First</a></li>
+			<li class="widget__item"><a class="widget__link" href="/posts/basic-elements/">Basic HTML Elements</a></li>
+		</ul>
+	</div>
+</div>
+</aside>
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2019 大数据时代 | Era of Big Data.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script></body>
+</html>
