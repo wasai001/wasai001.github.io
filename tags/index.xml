@@ -6,9 +6,37 @@
     <description>Recent content in Tags on 大数据时代 | Era of Big Data</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <lastBuildDate>Sun, 21 Jul 2019 13:12:56 -0700</lastBuildDate>
     
 	<atom:link href="https://wasai001.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Architecture Design</title>
+      <link>https://wasai001.github.io/tags/architecture-design/</link>
+      <pubDate>Sun, 21 Jul 2019 13:12:56 -0700</pubDate>
+      
+      <guid>https://wasai001.github.io/tags/architecture-design/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CFD</title>
+      <link>https://wasai001.github.io/tags/cfd/</link>
+      <pubDate>Sun, 21 Jul 2019 13:12:56 -0700</pubDate>
+      
+      <guid>https://wasai001.github.io/tags/cfd/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sustianablity</title>
+      <link>https://wasai001.github.io/tags/sustianablity/</link>
+      <pubDate>Sun, 21 Jul 2019 13:12:56 -0700</pubDate>
+      
+      <guid>https://wasai001.github.io/tags/sustianablity/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>

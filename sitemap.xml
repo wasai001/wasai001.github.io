@@ -3,26 +3,61 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://wasai001.github.io/tags/architecture-design/</loc>
+    <lastmod>2019-07-21T13:12:56-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://wasai001.github.io/tags/cfd/</loc>
+    <lastmod>2019-07-21T13:12:56-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://wasai001.github.io/categories/</loc>
-    <lastmod>2019-07-19T12:33:26-07:00</lastmod>
+    <lastmod>2019-07-21T13:12:56-07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://wasai001.github.io/posts/</loc>
-    <lastmod>2019-07-19T12:33:26-07:00</lastmod>
+    <lastmod>2019-07-21T13:12:56-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://wasai001.github.io/tags/sustianablity/</loc>
+    <lastmod>2019-07-21T13:12:56-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://wasai001.github.io/tags/</loc>
+    <lastmod>2019-07-21T13:12:56-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://wasai001.github.io/posts/cfd-karamay/</loc>
+    <lastmod>2019-07-21T13:12:56-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://wasai001.github.io/</loc>
+    <lastmod>2019-07-21T13:12:56-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://wasai001.github.io/categories/%E7%94%B5%E8%84%91%E6%A8%A1%E6%8B%9F-computational-simulation/</loc>
+    <lastmod>2019-07-21T13:12:56-07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://wasai001.github.io/posts/chineseposts/</loc>
     <lastmod>2019-07-19T12:33:26-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://wasai001.github.io/</loc>
-    <lastmod>2019-07-19T12:33:26-07:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -39,11 +74,6 @@
   <url>
     <loc>https://wasai001.github.io/about/</loc>
     <lastmod>2019-07-12T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://wasai001.github.io/tags/</loc>
-    <priority>0</priority>
   </url>
   
 </urlset>
