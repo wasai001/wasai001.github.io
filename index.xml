@@ -71,7 +71,7 @@ import os arr = os.listdir() target = [] for i in arr: if &amp;quot;- Copy.JPG&a
     </item>
     
     <item>
-      <title>about site | 关于本站</title>
+      <title>About Site | 关于本站</title>
       <link>https://wasai001.github.io/about/</link>
       <pubDate>Fri, 12 Jul 2019 00:00:00 +0000</pubDate>
       
