@@ -4,18 +4,20 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>404 Page not found - 大数据时代 | Era of Big Data</title>
+	<title>Programming - 大数据时代 | Era of Big Data</title>
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
 	<meta name="description" content="">
-	<meta property="og:title" content="404 Page not found" />
+	<meta property="og:title" content="Programming" />
 <meta property="og:description" content="Shuai&#39;s personal blog about big　data and data science" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://wasai001.github.io/404.html" />
+<meta property="og:url" content="https://wasai001.github.io/tags/programming/" />
 
+<meta property="og:updated_time" content="2019-07-21T19:59:56-07:00"/>
 
 	
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
 	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="alternate" type="application/rss+xml" href="/tags/programming/index.xml" title="大数据时代 | Era of Big Data">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
 	<link rel="stylesheet" href="/css/style.css">
 	
@@ -66,12 +68,36 @@ if (!doNotTrack) {
 		<div class="wrapper flex">
 			<div class="primary">
 			
-<main class="main" role="main">
-	<div class="warning">
-		<h1 class="warning__headline">404. Page not found</h1>
-		<p class="warning__text">The page you were looking for appears to have been moved, deleted or does not exist. Please, use search or go to <a href="/">main page</a>.</p>
+<main class="main list" role="main">
+	<header class="main__header">
+		<h1 class="main__title">Programming</h1>
+	</header><article class="list__item post">
+	<header class="list__header">
+		<h3 class="list__title post__title ">
+			<a href="/posts/remove_duplicates/" rel="bookmark">
+			Code - Remove Duplicate Files in the Folder | 编程 - 移除文件夹中的重复文件
+			</a>
+		</h3>
+		<div class="list__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg>
+	<time class="meta__text" datetime="2019-07-21T19:59:56">July 21, 2019</time>
+</div>
+
+<div class="meta__item-categories meta__item">
+	<svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg>
+	<span class="meta__text"><a class="meta__link" href="/categories/coding-%e7%bc%96%e7%a8%8b" rel="category">Coding 编程</a></span>
+</div>
+</div>
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		This code helps me remove duplicate files, ending with -copy in the folder.
+本程序会删除文件夹中以“-copy”结尾的重复文章。
+import os arr = os.listdir() target = [] for i in arr: if &quot;- Copy.JPG&quot; in i or &quot;- Copy.jpg&quot; in i or &quot;- Copy.heic&quot; in i or &quot;- Copy.BMP&quot; in i or &quot;- Copy.PNG&quot; in i or &quot;- Copy.png&quot; in i: target.append(i) for t in target: os.remove(t)  
 	</div>
+</article>
 </main>
+
 
 			</div>
 			

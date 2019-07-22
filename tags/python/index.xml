@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Python on 大数据时代 | Era of Big Data</title>
+    <link>https://wasai001.github.io/tags/python/</link>
+    <description>Recent content in Python on 大数据时代 | Era of Big Data</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 21 Jul 2019 19:59:56 -0700</lastBuildDate>
+    
+	<atom:link href="https://wasai001.github.io/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Code - Remove Duplicate Files in the Folder | 编程 - 移除文件夹中的重复文件</title>
+      <link>https://wasai001.github.io/posts/remove_duplicates/</link>
+      <pubDate>Sun, 21 Jul 2019 19:59:56 -0700</pubDate>
+      
+      <guid>https://wasai001.github.io/posts/remove_duplicates/</guid>
+      <description>This code helps me remove duplicate files, ending with -copy in the folder.
+本程序会删除文件夹中以“-copy”结尾的重复文章。
+import os arr = os.listdir() target = [] for i in arr: if &amp;quot;- Copy.JPG&amp;quot; in i or &amp;quot;- Copy.jpg&amp;quot; in i or &amp;quot;- Copy.heic&amp;quot; in i or &amp;quot;- Copy.BMP&amp;quot; in i or &amp;quot;- Copy.PNG&amp;quot; in i or &amp;quot;- Copy.png&amp;quot; in i: target.append(i) for t in target: os.remove(t)  </description>
+    </item>
+    
+  </channel>
+</rss>

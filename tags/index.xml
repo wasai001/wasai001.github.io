@@ -6,10 +6,37 @@
     <description>Recent content in Tags on 大数据时代 | Era of Big Data</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 21 Jul 2019 13:12:56 -0700</lastBuildDate>
+    <lastBuildDate>Sun, 21 Jul 2019 19:59:56 -0700</lastBuildDate>
     
 	<atom:link href="https://wasai001.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Coding</title>
+      <link>https://wasai001.github.io/tags/coding/</link>
+      <pubDate>Sun, 21 Jul 2019 19:59:56 -0700</pubDate>
+      
+      <guid>https://wasai001.github.io/tags/coding/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Programming</title>
+      <link>https://wasai001.github.io/tags/programming/</link>
+      <pubDate>Sun, 21 Jul 2019 19:59:56 -0700</pubDate>
+      
+      <guid>https://wasai001.github.io/tags/programming/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Python</title>
+      <link>https://wasai001.github.io/tags/python/</link>
+      <pubDate>Sun, 21 Jul 2019 19:59:56 -0700</pubDate>
+      
+      <guid>https://wasai001.github.io/tags/python/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Architecture Design</title>
