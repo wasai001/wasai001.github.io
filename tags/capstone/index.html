@@ -92,9 +92,7 @@ if (!doNotTrack) {
 	</header>
 	<div class="content list__excerpt post__content clearfix">
 		When representing no values, NULL and NA are used in SQL and R, respectively. Be careful that NULL in R is not the same one as NULL in SQL.
- Using SQL  select count(*) [Number of Null Salaries] from EmP where Salary is NULL   Using base R ```r
-load the data into dataframe install.packages(&ldquo;RODBC&rdquo;) library(RODBC) conn &lt;- odbcConnect(&ldquo;localhost&rdquo;)
-  Emp &lt;- sqlQuery(conn,&ldquo;select * from capstone.dbo.Emp&rdquo;)
+ Using SQL  select count(*) [Number of Null Salaries] from EmP where Salary is NULL   Using base R  # load the data into dataframe install.packages(&quot;RODBC&quot;) library(RODBC) conn &lt;- odbcConnect(&quot;localhost&quot;) Emp &lt;- sqlQuery(conn,&quot;select * from capstone.dbo.Emp&quot;) numNAs &lt;- apply(is.
 	</div>
 </article>
 </main>

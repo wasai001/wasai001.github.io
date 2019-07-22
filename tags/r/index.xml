@@ -18,9 +18,7 @@
       
       <guid>https://wasai001.github.io/posts/countnulls/</guid>
       <description>When representing no values, NULL and NA are used in SQL and R, respectively. Be careful that NULL in R is not the same one as NULL in SQL.
- Using SQL  select count(*) [Number of Null Salaries] from EmP where Salary is NULL   Using base R ```r
-load the data into dataframe install.packages(&amp;ldquo;RODBC&amp;rdquo;) library(RODBC) conn &amp;lt;- odbcConnect(&amp;ldquo;localhost&amp;rdquo;)
-  Emp &amp;lt;- sqlQuery(conn,&amp;ldquo;select * from capstone.dbo.Emp&amp;rdquo;)</description>
+ Using SQL  select count(*) [Number of Null Salaries] from EmP where Salary is NULL   Using base R  # load the data into dataframe install.packages(&amp;quot;RODBC&amp;quot;) library(RODBC) conn &amp;lt;- odbcConnect(&amp;quot;localhost&amp;quot;) Emp &amp;lt;- sqlQuery(conn,&amp;quot;select * from capstone.dbo.Emp&amp;quot;) numNAs &amp;lt;- apply(is.</description>
     </item>
     
   </channel>
