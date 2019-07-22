@@ -26,6 +26,12 @@
   </url>
   
   <url>
+    <loc>https://wasai001.github.io/</loc>
+    <lastmod>2019-07-21T19:59:56-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://wasai001.github.io/posts/</loc>
     <lastmod>2019-07-21T19:59:56-07:00</lastmod>
     <priority>0</priority>
@@ -45,12 +51,6 @@
   
   <url>
     <loc>https://wasai001.github.io/tags/</loc>
-    <lastmod>2019-07-21T19:59:56-07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://wasai001.github.io/</loc>
     <lastmod>2019-07-21T19:59:56-07:00</lastmod>
     <priority>0</priority>
   </url>

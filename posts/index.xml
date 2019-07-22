@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on 大数据时代 | Era of Big Data</title>
+    <title>Posts on Era of Big Data | 大数据时代</title>
     <link>https://wasai001.github.io/posts/</link>
-    <description>Recent content in Posts on 大数据时代 | Era of Big Data</description>
+    <description>Recent content in Posts on Era of Big Data | 大数据时代</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 21 Jul 2019 19:59:56 -0700</lastBuildDate>
@@ -32,7 +32,7 @@ import os arr = os.listdir() target = [] for i in arr: if &amp;quot;- Copy.JPG&a
     </item>
     
     <item>
-      <title>中文帖子 | Posts in Chinese</title>
+      <title>Posts in Chinese | 中文帖子</title>
       <link>https://wasai001.github.io/posts/chineseposts/</link>
       <pubDate>Fri, 19 Jul 2019 12:33:26 -0700</pubDate>
       
@@ -41,7 +41,7 @@ import os arr = os.listdir() target = [] for i in arr: if &amp;quot;- Copy.JPG&a
     </item>
     
     <item>
-      <title>英文帖子 | Posts in English</title>
+      <title>Posts in English | 英文帖子</title>
       <link>https://wasai001.github.io/posts/englishposts/</link>
       <pubDate>Fri, 19 Jul 2019 12:27:56 -0700</pubDate>
       
