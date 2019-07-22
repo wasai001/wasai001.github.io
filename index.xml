@@ -67,7 +67,7 @@ import os arr = os.listdir() target = [] for i in arr: if &amp;quot;- Copy.JPG&a
       <pubDate>Fri, 19 Jul 2019 12:27:56 -0700</pubDate>
       
       <guid>https://wasai001.github.io/posts/englishposts/</guid>
-      <description> The Application of CFD (Computational Fluid Dynamics) in Architecture Design Remove Duplicate Files in the same Folder How to randomly sample the data from a table  </description>
+      <description> The Application of CFD (Computational Fluid Dynamics) in Architecture Design Remove Duplicate Files in the same Folder How to randomly sample the data from a table How to count NULLs with SQL and R  </description>
     </item>
     
     <item>
