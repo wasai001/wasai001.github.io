@@ -6,10 +6,22 @@
     <description>Recent content in Machine Learning 机器学习 on Era of Big Data | 大数据时代</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 21 Jul 2019 23:55:56 -0700</lastBuildDate>
+    <lastBuildDate>Mon, 22 Jul 2019 12:47:37 -0700</lastBuildDate>
     
 	<atom:link href="https://wasai001.github.io/categories/machine-learning-%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>How to count NULLs with SQL and R</title>
+      <link>https://wasai001.github.io/posts/countnulls/</link>
+      <pubDate>Mon, 22 Jul 2019 12:47:37 -0700</pubDate>
+      
+      <guid>https://wasai001.github.io/posts/countnulls/</guid>
+      <description>When representing no values, NULL and NA are used in SQL and R, respectively. Be careful that NULL in R is not the same one as NULL in SQL.
+ Using SQL  select count(*) [Number of Null Salaries] from EmP where Salary is NULL   Using base R ```r
+load the data into dataframe install.packages(&amp;ldquo;RODBC&amp;rdquo;) library(RODBC) conn &amp;lt;- odbcConnect(&amp;ldquo;localhost&amp;rdquo;)
+  Emp &amp;lt;- sqlQuery(conn,&amp;ldquo;select * from capstone.dbo.Emp&amp;rdquo;)</description>
+    </item>
     
     <item>
       <title>How to randomly sample the data from a table</title>

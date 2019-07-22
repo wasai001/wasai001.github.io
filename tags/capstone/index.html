@@ -4,20 +4,20 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Architecture Design - Era of Big Data | 大数据时代</title>
+	<title>Capstone - Era of Big Data | 大数据时代</title>
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
 	<meta name="description" content="">
-	<meta property="og:title" content="Architecture Design" />
+	<meta property="og:title" content="Capstone" />
 <meta property="og:description" content="Shuai&#39;s personal blog about big　data and data science" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://wasai001.github.io/tags/architecture-design/" />
+<meta property="og:url" content="https://wasai001.github.io/tags/capstone/" />
 
-<meta property="og:updated_time" content="2019-07-21T13:12:56-07:00"/>
+<meta property="og:updated_time" content="2019-07-22T12:47:37-07:00"/>
 
 	
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
 	<link rel="dns-prefetch" href="//fonts.gstatic.com">
-	<link rel="alternate" type="application/rss+xml" href="/tags/architecture-design/index.xml" title="Era of Big Data | 大数据时代">
+	<link rel="alternate" type="application/rss+xml" href="/tags/capstone/index.xml" title="Era of Big Data | 大数据时代">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
 	<link rel="stylesheet" href="/css/style.css">
 	
@@ -70,28 +70,31 @@ if (!doNotTrack) {
 			
 <main class="main list" role="main">
 	<header class="main__header">
-		<h1 class="main__title">Architecture Design</h1>
+		<h1 class="main__title">Capstone</h1>
 	</header><article class="list__item post">
 	<header class="list__header">
 		<h3 class="list__title post__title ">
-			<a href="/posts/cfd-karamay/" rel="bookmark">
-			The Application of CFD (Computational Fluid Dynamics) in Architecture Design
+			<a href="/posts/countnulls/" rel="bookmark">
+			How to count NULLs with SQL and R
 			</a>
 		</h3>
 		<div class="list__meta meta">
 <div class="meta__item-datetime meta__item">
 	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg>
-	<time class="meta__text" datetime="2019-07-21T13:12:56">July 21, 2019</time>
+	<time class="meta__text" datetime="2019-07-22T12:47:37">July 22, 2019</time>
 </div>
 
 <div class="meta__item-categories meta__item">
 	<svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg>
-	<span class="meta__text"><a class="meta__link" href="/categories/computational-simulation-%e7%94%b5%e8%84%91%e6%a8%a1%e6%8b%9f" rel="category">Computational Simulation 电脑模拟</a></span>
+	<span class="meta__text"><a class="meta__link" href="/categories/machine-learning-%e6%9c%ba%e5%99%a8%e5%ad%a6%e4%b9%a0" rel="category">Machine Learning 机器学习</a></span>
 </div>
 </div>
 	</header>
 	<div class="content list__excerpt post__content clearfix">
-		Karamay is on the most north west side of China. The city is famous for its extreme cold and windy winter. To design a comfort external space for local resident to work or exercise outside during the winter, we leverage the technology of CFD (computational fluid dynamics) to simulate air movement in the district. With the simulation result, we can modify the building and courtyard&rsquo;s shape to intervene the air flow to avoid wind corridor and air static area.
+		When representing no values, NULL and NA are used in SQL and R, respectively. Be careful that NULL in R is not the same one as NULL in SQL.
+ Using SQL  select count(*) [Number of Null Salaries] from EmP where Salary is NULL   Using base R ```r
+load the data into dataframe install.packages(&ldquo;RODBC&rdquo;) library(RODBC) conn &lt;- odbcConnect(&ldquo;localhost&rdquo;)
+  Emp &lt;- sqlQuery(conn,&ldquo;select * from capstone.dbo.Emp&rdquo;)
 	</div>
 </article>
 </main>
