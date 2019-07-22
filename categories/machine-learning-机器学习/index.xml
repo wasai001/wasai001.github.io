@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Machine Learning 机器学习 on Era of Big Data | 大数据时代</title>
+    <link>https://wasai001.github.io/categories/machine-learning-%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/</link>
+    <description>Recent content in Machine Learning 机器学习 on Era of Big Data | 大数据时代</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 21 Jul 2019 12:46:56 -0700</lastBuildDate>
+    
+	<atom:link href="https://wasai001.github.io/categories/machine-learning-%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>How to randomly sample the data from a table</title>
+      <link>https://wasai001.github.io/posts/sampledata/</link>
+      <pubDate>Sun, 21 Jul 2019 12:46:56 -0700</pubDate>
+      
+      <guid>https://wasai001.github.io/posts/sampledata/</guid>
+      <description>If your table is too large for effective processing, you may want to use a randomly selected subset of data from your original table.
+Example code:
+USE AdventureWorks2012 ; GO select count(*) from Person.Person SELECT FirstName, LastName FROM Person.Person TABLESAMPLE (10 PERCENT);  Source: https://technet.microsoft.com/en-us/library/ms189108(v=sql.105).aspx</description>
+    </item>
+    
+  </channel>
+</rss>

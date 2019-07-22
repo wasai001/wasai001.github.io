@@ -32,6 +32,17 @@ import os arr = os.listdir() target = [] for i in arr: if &amp;quot;- Copy.JPG&a
     </item>
     
     <item>
+      <title>How to randomly sample the data from a table</title>
+      <link>https://wasai001.github.io/posts/sampledata/</link>
+      <pubDate>Sun, 21 Jul 2019 12:46:56 -0700</pubDate>
+      
+      <guid>https://wasai001.github.io/posts/sampledata/</guid>
+      <description>If your table is too large for effective processing, you may want to use a randomly selected subset of data from your original table.
+Example code:
+USE AdventureWorks2012 ; GO select count(*) from Person.Person SELECT FirstName, LastName FROM Person.Person TABLESAMPLE (10 PERCENT);  Source: https://technet.microsoft.com/en-us/library/ms189108(v=sql.105).aspx</description>
+    </item>
+    
+    <item>
       <title>Posts in Chinese | 中文帖子</title>
       <link>https://wasai001.github.io/posts/chineseposts/</link>
       <pubDate>Fri, 19 Jul 2019 12:33:26 -0700</pubDate>
@@ -46,7 +57,7 @@ import os arr = os.listdir() target = [] for i in arr: if &amp;quot;- Copy.JPG&a
       <pubDate>Fri, 19 Jul 2019 12:27:56 -0700</pubDate>
       
       <guid>https://wasai001.github.io/posts/englishposts/</guid>
-      <description> The Application of CFD (Computational Fluid Dynamics) in Architecture Design Remove Duplicate Files in the same Folder  </description>
+      <description> The Application of CFD (Computational Fluid Dynamics) in Architecture Design Remove Duplicate Files in the same Folder How to randomly sample the data from a table  </description>
     </item>
     
   </channel>
