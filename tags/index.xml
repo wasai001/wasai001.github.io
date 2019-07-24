@@ -6,10 +6,19 @@
     <description>Recent content in Tags on Era of Big Data | 大数据时代</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 22 Jul 2019 12:47:37 -0700</lastBuildDate>
+    <lastBuildDate>Wed, 24 Jul 2019 14:56:42 -0700</lastBuildDate>
     
 	<atom:link href="https://wasai001.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>R</title>
+      <link>https://wasai001.github.io/tags/r/</link>
+      <pubDate>Wed, 24 Jul 2019 14:56:42 -0700</pubDate>
+      
+      <guid>https://wasai001.github.io/tags/r/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Capstone</title>
@@ -17,15 +26,6 @@
       <pubDate>Mon, 22 Jul 2019 12:47:37 -0700</pubDate>
       
       <guid>https://wasai001.github.io/tags/capstone/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>R</title>
-      <link>https://wasai001.github.io/tags/r/</link>
-      <pubDate>Mon, 22 Jul 2019 12:47:37 -0700</pubDate>
-      
-      <guid>https://wasai001.github.io/tags/r/</guid>
       <description></description>
     </item>
     

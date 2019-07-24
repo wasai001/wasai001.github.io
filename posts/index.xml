@@ -6,10 +6,21 @@
     <description>Recent content in Posts on Era of Big Data | 大数据时代</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 22 Jul 2019 12:47:37 -0700</lastBuildDate>
+    <lastBuildDate>Wed, 24 Jul 2019 14:56:42 -0700</lastBuildDate>
     
 	<atom:link href="https://wasai001.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>How to reset R environment | 如何清理R的工作环境</title>
+      <link>https://wasai001.github.io/posts/cleanr/</link>
+      <pubDate>Wed, 24 Jul 2019 14:56:42 -0700</pubDate>
+      
+      <guid>https://wasai001.github.io/posts/cleanr/</guid>
+      <description>As part of best practice, cleaning the R environment before running the code is suggested. The following code will remove all variables and unload all libraries.
+作为最佳实践的一部分，在运行R的程序之前建议首先重置R的工作环境。下面的程序会清空R的所有变量以及程序库。
+# Clear environment of variables and functions rm(list = ls(all = TRUE)) # Clear environmet of packages if(is.null(sessionInfo()$otherPkgs) == FALSE)lapply(paste(&amp;quot;package:&amp;quot;, names(sessionInfo()$otherPkgs), sep=&amp;quot;&amp;quot;), detach, character.only = TRUE, unload = TRUE)  </description>
+    </item>
     
     <item>
       <title>How to count NULLs with SQL and R</title>
@@ -58,7 +69,7 @@ import os arr = os.listdir() target = [] for i in arr: if &amp;quot;- Copy.JPG&a
       <pubDate>Fri, 19 Jul 2019 12:33:26 -0700</pubDate>
       
       <guid>https://wasai001.github.io/posts/chineseposts/</guid>
-      <description> 删除文件夹中重复文件  </description>
+      <description> 删除文件夹中重复文件 如何清理R的工作环境  </description>
     </item>
     
     <item>
@@ -67,7 +78,7 @@ import os arr = os.listdir() target = [] for i in arr: if &amp;quot;- Copy.JPG&a
       <pubDate>Fri, 19 Jul 2019 12:27:56 -0700</pubDate>
       
       <guid>https://wasai001.github.io/posts/englishposts/</guid>
-      <description> The Application of CFD (Computational Fluid Dynamics) in Architecture Design Remove Duplicate Files in the same Folder How to randomly sample the data from a table How to count NULLs with SQL and R  </description>
+      <description> The Application of CFD (Computational Fluid Dynamics) in Architecture Design Remove Duplicate Files in the same Folder How to randomly sample the data from a table How to count NULLs with SQL and R How to reset R environment  </description>
     </item>
     
   </channel>

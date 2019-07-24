@@ -12,7 +12,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://wasai001.github.io/categories/coding-%E7%BC%96%E7%A8%8B/" />
 
-<meta property="og:updated_time" content="2019-07-21T19:59:56-07:00"/>
+<meta property="og:updated_time" content="2019-07-24T14:56:42-07:00"/>
 
 	
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
@@ -72,6 +72,30 @@ if (!doNotTrack) {
 	<header class="main__header">
 		<h1 class="main__title">Coding 编程</h1>
 	</header><article class="list__item post">
+	<header class="list__header">
+		<h3 class="list__title post__title ">
+			<a href="/posts/cleanr/" rel="bookmark">
+			How to reset R environment | 如何清理R的工作环境
+			</a>
+		</h3>
+		<div class="list__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg>
+	<time class="meta__text" datetime="2019-07-24T14:56:42">July 24, 2019</time>
+</div>
+
+<div class="meta__item-categories meta__item">
+	<svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg>
+	<span class="meta__text"><a class="meta__link" href="/categories/coding-%e7%bc%96%e7%a8%8b" rel="category">Coding 编程</a></span>
+</div>
+</div>
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		As part of best practice, cleaning the R environment before running the code is suggested. The following code will remove all variables and unload all libraries.
+作为最佳实践的一部分，在运行R的程序之前建议首先重置R的工作环境。下面的程序会清空R的所有变量以及程序库。
+# Clear environment of variables and functions rm(list = ls(all = TRUE)) # Clear environmet of packages if(is.null(sessionInfo()$otherPkgs) == FALSE)lapply(paste(&quot;package:&quot;, names(sessionInfo()$otherPkgs), sep=&quot;&quot;), detach, character.only = TRUE, unload = TRUE)  
+	</div>
+</article><article class="list__item post">
 	<header class="list__header">
 		<h3 class="list__title post__title ">
 			<a href="/posts/remove_duplicates/" rel="bookmark">
@@ -138,11 +162,11 @@ import os arr = os.listdir() target = [] for i in arr: if &quot;- Copy.JPG&quot;
 	<h4 class="widget__title">Recent Posts</h4>
 	<div class="widget__content">
 		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/posts/cleanr/">How to reset R environment | 如何清理R的工作环境</a></li>
 			<li class="widget__item"><a class="widget__link" href="/posts/countnulls/">How to count NULLs with SQL and R</a></li>
 			<li class="widget__item"><a class="widget__link" href="/posts/sampledata/">How to randomly sample the data from a table</a></li>
 			<li class="widget__item"><a class="widget__link" href="/posts/remove_duplicates/">Code - Remove Duplicate Files in the Folder | 编程 - 移除文件夹中的重复文件</a></li>
 			<li class="widget__item"><a class="widget__link" href="/posts/cfd-karamay/">The Application of CFD (Computational Fluid Dynamics) in Architecture Design</a></li>
-			<li class="widget__item"><a class="widget__link" href="/posts/chineseposts/">Posts in Chinese | 中文帖子</a></li>
 		</ul>
 	</div>
 </div>
