@@ -6,10 +6,20 @@
     <description>Recent content on Era of Big Data | 大数据时代</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 24 Jul 2019 14:56:42 -0700</lastBuildDate>
+    <lastBuildDate>Fri, 26 Jul 2019 21:36:29 -0700</lastBuildDate>
     
 	<atom:link href="https://wasai001.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>How to load data from SQL Server to Pandas Dataframe in Python</title>
+      <link>https://wasai001.github.io/posts/db2pandas/</link>
+      <pubDate>Fri, 26 Jul 2019 21:36:29 -0700</pubDate>
+      
+      <guid>https://wasai001.github.io/posts/db2pandas/</guid>
+      <description>Here is the way of building connections between SQL Server and Python. Then import data from SQL Server to Pandas Dataframe.
+import pyodbc import pandas as pd conn = pyodbc.connect(&#39;Driver={SQL Server};&#39; &#39;Server=localhost;&#39; &#39;Database=DataBase;&#39; &#39;Trusted_Connection=yes;&#39;) query = &amp;quot;select * from DataBase.dbo.annual_demand&amp;quot; df = pd.read_sql(query, conn) conn.close()  </description>
+    </item>
     
     <item>
       <title>How to reset R environment | 如何清理R的工作环境</title>
@@ -78,7 +88,7 @@ import os arr = os.listdir() target = [] for i in arr: if &amp;quot;- Copy.JPG&a
       <pubDate>Fri, 19 Jul 2019 12:27:56 -0700</pubDate>
       
       <guid>https://wasai001.github.io/posts/englishposts/</guid>
-      <description> The Application of CFD (Computational Fluid Dynamics) in Architecture Design Remove Duplicate Files in the same Folder How to randomly sample the data from a table How to count NULLs with SQL and R How to reset R environment  </description>
+      <description> The Application of CFD (Computational Fluid Dynamics) in Architecture Design Remove Duplicate Files in the same Folder How to randomly sample the data from a table How to count NULLs with SQL and R How to reset R environment How to load data from SQL Server to Pandas Dataframe in Python  </description>
     </item>
     
     <item>
