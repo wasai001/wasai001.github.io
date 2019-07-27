@@ -6,10 +6,19 @@
     <description>Recent content in Python on Era of Big Data | 大数据时代</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 26 Jul 2019 21:36:29 -0700</lastBuildDate>
+    <lastBuildDate>Sat, 27 Jul 2019 13:14:15 -0700</lastBuildDate>
     
 	<atom:link href="https://wasai001.github.io/tags/python/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Pandas Cheat Sheet (To be continued)</title>
+      <link>https://wasai001.github.io/posts/pandascheatsheet/</link>
+      <pubDate>Sat, 27 Jul 2019 13:14:15 -0700</pubDate>
+      
+      <guid>https://wasai001.github.io/posts/pandascheatsheet/</guid>
+      <description> count the null values  # count by columns df.isnull().sum(axis=0) # count by rows df.isnull().sum(axis=1)  </description>
+    </item>
     
     <item>
       <title>How to load data from SQL Server to Pandas Dataframe in Python</title>
