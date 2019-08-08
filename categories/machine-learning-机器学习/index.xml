@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Machine Learning 机器学习 on Era of Big Data | 大数据时代</title>
+    <title>Machine Learning 机器学习 on Big Data Time</title>
     <link>https://wasai001.github.io/categories/machine-learning-%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/</link>
-    <description>Recent content in Machine Learning 机器学习 on Era of Big Data | 大数据时代</description>
+    <description>Recent content in Machine Learning 机器学习 on Big Data Time</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>en</language>
     <lastBuildDate>Mon, 22 Jul 2019 12:47:37 -0700</lastBuildDate>
     
 	<atom:link href="https://wasai001.github.io/categories/machine-learning-%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/index.xml" rel="self" type="application/rss+xml" />

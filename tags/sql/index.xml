@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>SQL on Era of Big Data | 大数据时代</title>
+    <title>SQL on Big Data Time</title>
     <link>https://wasai001.github.io/tags/sql/</link>
-    <description>Recent content in SQL on Era of Big Data | 大数据时代</description>
+    <description>Recent content in SQL on Big Data Time</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>en</language>
     <lastBuildDate>Mon, 22 Jul 2019 12:47:37 -0700</lastBuildDate>
     
 	<atom:link href="https://wasai001.github.io/tags/sql/index.xml" rel="self" type="application/rss+xml" />

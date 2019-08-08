@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>R on Era of Big Data | 大数据时代</title>
+    <title>R on Big Data Time</title>
     <link>https://wasai001.github.io/tags/r/</link>
-    <description>Recent content in R on Era of Big Data | 大数据时代</description>
+    <description>Recent content in R on Big Data Time</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>en</language>
     <lastBuildDate>Wed, 24 Jul 2019 14:56:42 -0700</lastBuildDate>
     
 	<atom:link href="https://wasai001.github.io/tags/r/index.xml" rel="self" type="application/rss+xml" />
