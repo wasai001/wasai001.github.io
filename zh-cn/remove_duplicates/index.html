@@ -4,15 +4,15 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Posts in English | 英文帖子 - Big Data Time</title>
+	<title>Code - Remove Duplicate Files in the Folder | 编程 - 移除文件夹中的重复文件 - Big Data Time</title>
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
-	<meta name="description" content="This post lists all my English posts">
-	<meta property="og:title" content="Posts in English | 英文帖子" />
-<meta property="og:description" content="This post lists all my English posts" />
+	<meta name="description" content="This code helps me remove duplicate files in the folder">
+	<meta property="og:title" content="Code - Remove Duplicate Files in the Folder | 编程 - 移除文件夹中的重复文件" />
+<meta property="og:description" content="This code helps me remove duplicate files in the folder" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://wasai001.github.io/posts/englishposts/" />
-<meta property="article:published_time" content="2019-07-19T12:27:56-07:00"/>
-<meta property="article:modified_time" content="2019-07-19T12:27:56-07:00"/><meta property="og:site_name" content="Big Data Time" />
+<meta property="og:url" content="https://wasai001.github.io/zh-cn/remove_duplicates/" />
+<meta property="article:published_time" content="2019-07-21T19:59:56-07:00"/>
+<meta property="article:modified_time" content="2019-07-21T19:59:56-07:00"/><meta property="og:site_name" content="Big Data Time" />
 
 	
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
@@ -50,7 +50,7 @@ if (!doNotTrack) {
 		<span class="menu__btn-title" tabindex="-1">Menu</span>
 	</button>
 	<ul class="menu__list">
-		<li class="menu__item menu__item--active">
+		<li class="menu__item">
 			<a class="menu__link" href="/posts/englishposts/">Technical Posts</a>
 		</li>
 		<li class="menu__item">
@@ -70,32 +70,62 @@ if (!doNotTrack) {
 <main class="main" role="main">
 	<article class="post">
 		<header class="post__header">
-			<h1 class="post__title">Posts in English | 英文帖子</h1>
+			<h1 class="post__title">Code - Remove Duplicate Files in the Folder | 编程 - 移除文件夹中的重复文件</h1>
 			<div class="post__meta meta">
 <div class="meta__item-datetime meta__item">
 	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg>
-	<time class="meta__text" datetime="2019-07-19T12:27:56">July 19, 2019</time>
+	<time class="meta__text" datetime="2019-07-21T19:59:56">July 21, 2019</time>
+</div>
+
+<div class="meta__item-categories meta__item">
+	<svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg>
+	<span class="meta__text"><a class="meta__link" href="/categories/coding-%e7%bc%96%e7%a8%8b" rel="category">Coding 编程</a></span>
 </div>
 </div>
 		</header><div class="content post__content clearfix">
-			<ul>
-<li><a href="https://wasai001.github.io/posts/cfd-karamay/">The Application of CFD (Computational Fluid Dynamics) in Architecture Design</a></li>
-<li><a href="https://wasai001.github.io/posts/remove_duplicates/">Remove Duplicate Files in the same Folder</a></li>
-<li><a href="https://wasai001.github.io/posts/sampledata/">How to randomly sample the data from a table</a></li>
-<li><a href="https://wasai001.github.io/posts/countnulls/">How to count NULLs with SQL and R</a></li>
-<li><a href="https://wasai001.github.io/posts/cleanr/">How to reset R environment</a></li>
-<li><a href="https://wasai001.github.io/posts/db2pandas/">How to load data from SQL Server to Pandas Dataframe in Python</a></li>
-</ul>
+			<p>This code helps me remove duplicate files, ending with <strong>-copy</strong> in the folder.</p>
+
+<p>本程序会删除文件夹中以“-copy”结尾的重复文章。</p>
+
+<pre><code class="language-python">import os
+arr = os.listdir()
+target = []
+for i in arr:
+    if &quot;- Copy.JPG&quot; in i or &quot;- Copy.jpg&quot; in i or &quot;- Copy.heic&quot; in i or &quot;- Copy.BMP&quot; in i or &quot;- Copy.PNG&quot; in i or &quot;- Copy.png&quot; in i:
+        target.append(i)
+
+for t in target:
+    os.remove(t)
+</code></pre>
 
 		</div>
 		
+<div class="post__tags tags clearfix">
+	<svg class="tags__icon icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item"><a class="tags__link btn" href="/tags/python/" rel="tag">Python</a></li>
+		<li class="tags__item"><a class="tags__link btn" href="/tags/coding/" rel="tag">Coding</a></li>
+		<li class="tags__item"><a class="tags__link btn" href="/tags/programming/" rel="tag">Programming</a></li>
+	</ul>
+</div>
 	</article>
 </main>
 
+<div class="authorbox clearfix">
+	<figure class="authorbox__avatar">
+		<img alt="Shuai avatar" src="/img/avatar.png" class="avatar" height="90" width="90">
+	</figure>
+	<div class="authorbox__header">
+		<span class="authorbox__name">About Shuai</span>
+	</div>
+	<div class="authorbox__description">
+		Shuai&#39;s true identity is unknown. Maybe he is a successful blogger or writer. Nobody knows it.
+	</div>
+</div>
 
 <nav class="post-nav flex">
 	<div class="post-nav__item post-nav__item--next">
-		<a class="post-nav__link" href="/posts/chineseposts/" rel="next"><span class="post-nav__caption">Next&thinsp;»</span><p class="post-nav__post-title">Posts in Chinese | 中文帖子</p></a>
+		<a class="post-nav__link" href="/zh-cn/cleanr/" rel="next"><span class="post-nav__caption">Next&thinsp;»</span><p class="post-nav__post-title">How to reset R environment | 如何清理R的工作环境</p></a>
 	</div>
 </nav>
 

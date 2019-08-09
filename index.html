@@ -118,30 +118,6 @@ import pyodbc import pandas as pd conn = pyodbc.connect('Driver={SQL Server};' '
 </article><article class="list__item post">
 	<header class="list__header">
 		<h3 class="list__title post__title ">
-			<a href="/posts/cleanr/" rel="bookmark">
-			How to reset R environment | 如何清理R的工作环境
-			</a>
-		</h3>
-		<div class="list__meta meta">
-<div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg>
-	<time class="meta__text" datetime="2019-07-24T14:56:42">July 24, 2019</time>
-</div>
-
-<div class="meta__item-categories meta__item">
-	<svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg>
-	<span class="meta__text"><a class="meta__link" href="/categories/coding-%e7%bc%96%e7%a8%8b" rel="category">Coding 编程</a></span>
-</div>
-</div>
-	</header>
-	<div class="content list__excerpt post__content clearfix">
-		As part of best practice, cleaning the R environment before running the code is suggested. The following code will remove all variables and unload all libraries.
-作为最佳实践的一部分，在运行R的程序之前建议首先重置R的工作环境。下面的程序会清空R的所有变量以及程序库。
-# Clear environment of variables and functions rm(list = ls(all = TRUE)) # Clear environmet of packages if(is.null(sessionInfo()$otherPkgs) == FALSE)lapply(paste(&quot;package:&quot;, names(sessionInfo()$otherPkgs), sep=&quot;&quot;), detach, character.only = TRUE, unload = TRUE)  
-	</div>
-</article><article class="list__item post">
-	<header class="list__header">
-		<h3 class="list__title post__title ">
 			<a href="/posts/countnulls/" rel="bookmark">
 			How to count NULLs with SQL and R
 			</a>
@@ -185,30 +161,6 @@ import pyodbc import pandas as pd conn = pyodbc.connect('Driver={SQL Server};' '
 		If your table is too large for effective processing, you may want to use a randomly selected subset of data from your original table.
 Example code:
 USE AdventureWorks2012 ; GO select count(*) from Person.Person SELECT FirstName, LastName FROM Person.Person TABLESAMPLE (10 PERCENT);  Data Source: https://technet.microsoft.com/en-us/library/ms189108(v=sql.105).aspx
-	</div>
-</article><article class="list__item post">
-	<header class="list__header">
-		<h3 class="list__title post__title ">
-			<a href="/posts/remove_duplicates/" rel="bookmark">
-			Code - Remove Duplicate Files in the Folder | 编程 - 移除文件夹中的重复文件
-			</a>
-		</h3>
-		<div class="list__meta meta">
-<div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg>
-	<time class="meta__text" datetime="2019-07-21T19:59:56">July 21, 2019</time>
-</div>
-
-<div class="meta__item-categories meta__item">
-	<svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg>
-	<span class="meta__text"><a class="meta__link" href="/categories/coding-%e7%bc%96%e7%a8%8b" rel="category">Coding 编程</a></span>
-</div>
-</div>
-	</header>
-	<div class="content list__excerpt post__content clearfix">
-		This code helps me remove duplicate files, ending with -copy in the folder.
-本程序会删除文件夹中以“-copy”结尾的重复文章。
-import os arr = os.listdir() target = [] for i in arr: if &quot;- Copy.JPG&quot; in i or &quot;- Copy.jpg&quot; in i or &quot;- Copy.heic&quot; in i or &quot;- Copy.BMP&quot; in i or &quot;- Copy.PNG&quot; in i or &quot;- Copy.png&quot; in i: target.append(i) for t in target: os.remove(t)  
 	</div>
 </article><article class="list__item post">
 	<header class="list__header">
@@ -280,6 +232,25 @@ import os arr = os.listdir() target = [] for i in arr: if &quot;- Copy.JPG&quot;
 		<input type="hidden" name="sitesearch" value="https://wasai001.github.io/" />
 	</form>
 </div>
+<div class="widget-languages widget">
+	<h4 class="widget__title">Languages</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item">
+				<a class="widget-languages__link widget__link" href="/">
+					<span class="widget-languages__link-btn widget__link-btn btn">EN</span>
+					<span class="widget-languages__link-text widget__link-text">English</span>
+				</a>
+			</li>
+			<li class="widget__item">
+				<a class="widget-languages__link widget__link" href="/cn/">
+					<span class="widget-languages__link-btn widget__link-btn btn">CN</span>
+					<span class="widget-languages__link-text widget__link-text">中文</span>
+				</a>
+			</li>
+		</ul>
+	</div>
+</div>
 <div class="widget-categories widget">
 	<h4 class="widget__title">Categories</h4>
 	<div class="widget__content">
@@ -313,9 +284,9 @@ import os arr = os.listdir() target = [] for i in arr: if &quot;- Copy.JPG&quot;
 		<ul class="widget__list">
 			<li class="widget__item"><a class="widget__link" href="/posts/pandascheatsheet/">Pandas Cheat Sheet (To be continued)</a></li>
 			<li class="widget__item"><a class="widget__link" href="/posts/db2pandas/">How to load data from SQL Server to Pandas Dataframe in Python</a></li>
-			<li class="widget__item"><a class="widget__link" href="/posts/cleanr/">How to reset R environment | 如何清理R的工作环境</a></li>
 			<li class="widget__item"><a class="widget__link" href="/posts/countnulls/">How to count NULLs with SQL and R</a></li>
 			<li class="widget__item"><a class="widget__link" href="/posts/sampledata/">How to randomly sample the data from a table</a></li>
+			<li class="widget__item"><a class="widget__link" href="/posts/cfd-karamay/">The Application of CFD (Computational Fluid Dynamics) in Architecture Design</a></li>
 		</ul>
 	</div>
 </div>
@@ -328,25 +299,6 @@ import os arr = os.listdir() target = [] for i in arr: if &quot;- Copy.JPG&quot;
 				<span>mashuai@gmail.com</span>
 			</a>
 		</div>
-	</div>
-</div>
-<div class="widget-languages widget">
-	<h4 class="widget__title">Languages</h4>
-	<div class="widget__content">
-		<ul class="widget__list">
-			<li class="widget__item">
-				<a class="widget-languages__link widget__link" href="/">
-					<span class="widget-languages__link-btn widget__link-btn btn">EN</span>
-					<span class="widget-languages__link-text widget__link-text"></span>
-				</a>
-			</li>
-			<li class="widget__item">
-				<a class="widget-languages__link widget__link" href="/zh-cn/">
-					<span class="widget-languages__link-btn widget__link-btn btn">ZH-CN</span>
-					<span class="widget-languages__link-text widget__link-text"></span>
-				</a>
-			</li>
-		</ul>
 	</div>
 </div>
 </aside>

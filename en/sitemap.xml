@@ -8,8 +8,8 @@
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-cn"
-                href="https://wasai001.github.io/zh-cn/"
+                hreflang="cn"
+                href="https://wasai001.github.io/cn/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -24,8 +24,8 @@
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-cn"
-                href="https://wasai001.github.io/zh-cn/categories/"
+                hreflang="cn"
+                href="https://wasai001.github.io/cn/categories/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -75,8 +75,8 @@
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-cn"
-                href="https://wasai001.github.io/zh-cn/tags/"
+                hreflang="cn"
+                href="https://wasai001.github.io/cn/tags/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -97,12 +97,18 @@
   </url>
   
   <url>
-    <loc>https://wasai001.github.io/posts/cleanr/</loc>
+    <loc>https://wasai001.github.io/zh-cn/cleanr/</loc>
     <lastmod>2019-07-24T14:56:42-07:00</lastmod>
   </url>
   
   <url>
     <loc>https://wasai001.github.io/tags/r/</loc>
+    <lastmod>2019-07-24T14:56:42-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://wasai001.github.io/zh-cn/</loc>
     <lastmod>2019-07-24T14:56:42-07:00</lastmod>
     <priority>0</priority>
   </url>
@@ -136,7 +142,7 @@
   </url>
   
   <url>
-    <loc>https://wasai001.github.io/posts/remove_duplicates/</loc>
+    <loc>https://wasai001.github.io/zh-cn/remove_duplicates/</loc>
     <lastmod>2019-07-21T19:59:56-07:00</lastmod>
   </url>
   

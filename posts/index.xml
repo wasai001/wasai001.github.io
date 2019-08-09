@@ -31,17 +31,6 @@ import pyodbc import pandas as pd conn = pyodbc.connect(&#39;Driver={SQL Server}
     </item>
     
     <item>
-      <title>How to reset R environment | 如何清理R的工作环境</title>
-      <link>https://wasai001.github.io/posts/cleanr/</link>
-      <pubDate>Wed, 24 Jul 2019 14:56:42 -0700</pubDate>
-      
-      <guid>https://wasai001.github.io/posts/cleanr/</guid>
-      <description>As part of best practice, cleaning the R environment before running the code is suggested. The following code will remove all variables and unload all libraries.
-作为最佳实践的一部分，在运行R的程序之前建议首先重置R的工作环境。下面的程序会清空R的所有变量以及程序库。
-# Clear environment of variables and functions rm(list = ls(all = TRUE)) # Clear environmet of packages if(is.null(sessionInfo()$otherPkgs) == FALSE)lapply(paste(&amp;quot;package:&amp;quot;, names(sessionInfo()$otherPkgs), sep=&amp;quot;&amp;quot;), detach, character.only = TRUE, unload = TRUE)  </description>
-    </item>
-    
-    <item>
       <title>How to count NULLs with SQL and R</title>
       <link>https://wasai001.github.io/posts/countnulls/</link>
       <pubDate>Mon, 22 Jul 2019 12:47:37 -0700</pubDate>
@@ -60,17 +49,6 @@ import pyodbc import pandas as pd conn = pyodbc.connect(&#39;Driver={SQL Server}
       <description>If your table is too large for effective processing, you may want to use a randomly selected subset of data from your original table.
 Example code:
 USE AdventureWorks2012 ; GO select count(*) from Person.Person SELECT FirstName, LastName FROM Person.Person TABLESAMPLE (10 PERCENT);  Data Source: https://technet.microsoft.com/en-us/library/ms189108(v=sql.105).aspx</description>
-    </item>
-    
-    <item>
-      <title>Code - Remove Duplicate Files in the Folder | 编程 - 移除文件夹中的重复文件</title>
-      <link>https://wasai001.github.io/posts/remove_duplicates/</link>
-      <pubDate>Sun, 21 Jul 2019 19:59:56 -0700</pubDate>
-      
-      <guid>https://wasai001.github.io/posts/remove_duplicates/</guid>
-      <description>This code helps me remove duplicate files, ending with -copy in the folder.
-本程序会删除文件夹中以“-copy”结尾的重复文章。
-import os arr = os.listdir() target = [] for i in arr: if &amp;quot;- Copy.JPG&amp;quot; in i or &amp;quot;- Copy.jpg&amp;quot; in i or &amp;quot;- Copy.heic&amp;quot; in i or &amp;quot;- Copy.BMP&amp;quot; in i or &amp;quot;- Copy.PNG&amp;quot; in i or &amp;quot;- Copy.png&amp;quot; in i: target.append(i) for t in target: os.remove(t)  </description>
     </item>
     
     <item>
