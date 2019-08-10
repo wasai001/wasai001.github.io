@@ -4,20 +4,20 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Cheat Sheet - Big Data Time</title>
+	<title>How to load data from SQL Server to Pandas Dataframe in Python - Big Data Time</title>
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
 	<meta name="description" content="">
-	<meta property="og:title" content="Cheat Sheet" />
-<meta property="og:description" content="Shuai&#39;s personal blog about big　data and data science" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://wasai001.github.io/tags/cheat-sheet/" />
-
-<meta property="og:updated_time" content="2019-07-27T13:14:15-07:00" />
+	<meta property="og:title" content="How to load data from SQL Server to Pandas Dataframe in Python" />
+<meta property="og:description" content="Here is the way of building connections between SQL Server and Python. Then import data from SQL Server to Pandas Dataframe.
+import pyodbc import pandas as pd conn = pyodbc.connect(&#39;Driver={SQL Server};&#39; &#39;Server=localhost;&#39; &#39;Database=DataBase;&#39; &#39;Trusted_Connection=yes;&#39;) query = &quot;select * from DataBase.dbo.annual_demand&quot; df = pd.read_sql(query, conn) conn.close()  " />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://wasai001.github.io/programming/db2pandas/" />
+<meta property="article:published_time" content="2019-07-26T21:36:29-07:00" />
+<meta property="article:modified_time" content="2019-07-26T21:36:29-07:00" />
 
 	
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
 	<link rel="dns-prefetch" href="//fonts.gstatic.com">
-	<link rel="alternate" type="application/rss+xml" href="/tags/cheat-sheet/index.xml" title="Big Data Time">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
 	<link rel="stylesheet" href="/css/style.css">
 	
@@ -74,34 +74,69 @@ if (!doNotTrack) {
 		<div class="wrapper flex">
 			<div class="primary">
 			
-<main class="main list" role="main">
-	<header class="main__header">
-		<h1 class="main__title">Cheat Sheet</h1>
-	</header><article class="list__item post">
-	<header class="list__header">
-		<h3 class="list__title post__title ">
-			<a href="/programming/pandascheatsheet/" rel="bookmark">
-			Pandas Cheat Sheet (To be continued)
-			</a>
-		</h3>
-		<div class="list__meta meta">
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">How to load data from SQL Server to Pandas Dataframe in Python</h1>
+			<div class="post__meta meta">
 <div class="meta__item-datetime meta__item">
 	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg>
-	<time class="meta__text" datetime="2019-07-27T13:14:15">July 27, 2019</time>
+	<time class="meta__text" datetime="2019-07-26T21:36:29">July 26, 2019</time>
 </div>
 </div>
-	</header>
-	<div class="content list__excerpt post__content clearfix">
-		 count the null values
-# count by columns df.isnull().sum(axis=0) # count by rows df.isnull().sum(axis=1)   
-	</div>
-</article>
+		</header><div class="content post__content clearfix">
+			<p>Here is the way of building connections between SQL Server and Python. Then import data from SQL Server to Pandas Dataframe.</p>
+
+<pre><code class="language-python">import pyodbc
+import pandas as pd
+conn = pyodbc.connect('Driver={SQL Server};'
+                      'Server=localhost;'
+                      'Database=DataBase;'
+                      'Trusted_Connection=yes;')
+
+query = &quot;select * from DataBase.dbo.annual_demand&quot;
+df = pd.read_sql(query, conn)
+
+conn.close()
+</code></pre>
+
+		</div>
+		
+<div class="post__tags tags clearfix">
+	<svg class="tags__icon icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item"><a class="tags__link btn" href="/tags/python/" rel="tag">Python</a></li>
+		<li class="tags__item"><a class="tags__link btn" href="/tags/pandas/" rel="tag">Pandas</a></li>
+		<li class="tags__item"><a class="tags__link btn" href="/tags/sql-server/" rel="tag">SQL Server</a></li>
+	</ul>
+</div>
+	</article>
 </main>
+
+<div class="authorbox clearfix">
+	<figure class="authorbox__avatar">
+		<img alt="Shuai avatar" src="/img/avatar.png" class="avatar" height="90" width="90">
+	</figure>
+	<div class="authorbox__header">
+		<span class="authorbox__name">About Shuai</span>
+	</div>
+	<div class="authorbox__description">
+		Shuai&#39;s true identity is unknown. Maybe he is a successful blogger or writer. Nobody knows it.
+	</div>
+</div>
+
+<nav class="post-nav flex">
+	<div class="post-nav__item post-nav__item--prev">
+		<a class="post-nav__link" href="/programming/cleanr/" rel="prev"><span class="post-nav__caption">«&thinsp;Previous</span><p class="post-nav__post-title">How to reset R environment</p></a>
+	</div>
+	<div class="post-nav__item post-nav__item--next">
+		<a class="post-nav__link" href="/programming/pandascheatsheet/" rel="next"><span class="post-nav__caption">Next&thinsp;»</span><p class="post-nav__post-title">Pandas Cheat Sheet (To be continued)</p></a>
+	</div>
+</nav>
 
 
 			</div>
-			
-<aside class="sidebar"><div class="widget-search widget">
+			<aside class="sidebar"><div class="widget-search widget">
 	<form class="widget-search__form" role="search" method="get" action="https://google.com/search">
 		<label>
 			<input class="widget-search__field" type="search" placeholder="SEARCH..." value="" name="q" aria-label="SEARCH...">

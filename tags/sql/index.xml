@@ -13,20 +13,22 @@
     
     <item>
       <title>How to count NULLs with SQL and R</title>
-      <link>https://wasai001.github.io/posts/countnulls/</link>
+      <link>https://wasai001.github.io/programming/countnulls/</link>
       <pubDate>Mon, 22 Jul 2019 12:47:37 -0700</pubDate>
       
-      <guid>https://wasai001.github.io/posts/countnulls/</guid>
+      <guid>https://wasai001.github.io/programming/countnulls/</guid>
       <description>When representing no values, NULL and NA are used in SQL and R, respectively. Be careful that NULL in R is not the same one as NULL in SQL.
- Using SQL  select count(*) [Number of Null Salaries] from EmP where Salary is NULL   Using base R  # load the data into dataframe install.packages(&amp;quot;RODBC&amp;quot;) library(RODBC) conn &amp;lt;- odbcConnect(&amp;quot;localhost&amp;quot;) Emp &amp;lt;- sqlQuery(conn,&amp;quot;select * from capstone.dbo.Emp&amp;quot;) numNAs &amp;lt;- apply(is.</description>
+ Using SQL
+select count(*) [Number of Null Salaries] from EmP where Salary is NULL  Using base R
+# load the data into dataframe install.packages(&amp;quot;RODBC&amp;quot;) library(RODBC) conn &amp;lt;- odbcConnect(&amp;quot;localhost&amp;quot;) Emp &amp;lt;- sqlQuery(conn,&amp;quot;select * from capstone.dbo.Emp&amp;quot;) numNAs &amp;lt;- apply(is.na(Emp),2,sum) ratiosNulls &amp;lt;- numNAs/nrow(Emp) ratiosNulls # don&#39;t forget to close the connection odbcClose(conn)   </description>
     </item>
     
     <item>
       <title>How to randomly sample the data from a table</title>
-      <link>https://wasai001.github.io/posts/sampledata/</link>
+      <link>https://wasai001.github.io/programming/sampledata/</link>
       <pubDate>Sun, 21 Jul 2019 23:55:56 -0700</pubDate>
       
-      <guid>https://wasai001.github.io/posts/sampledata/</guid>
+      <guid>https://wasai001.github.io/programming/sampledata/</guid>
       <description>If your table is too large for effective processing, you may want to use a randomly selected subset of data from your original table.
 Example code:
 USE AdventureWorks2012 ; GO select count(*) from Person.Person SELECT FirstName, LastName FROM Person.Person TABLESAMPLE (10 PERCENT);  Data Source: https://technet.microsoft.com/en-us/library/ms189108(v=sql.105).aspx</description>

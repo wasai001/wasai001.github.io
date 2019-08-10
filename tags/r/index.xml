@@ -12,24 +12,25 @@
     
     
     <item>
-      <title>How to reset R environment | 如何清理R的工作环境</title>
-      <link>https://wasai001.github.io/zh-cn/cleanr/</link>
+      <title>How to reset R environment</title>
+      <link>https://wasai001.github.io/programming/cleanr/</link>
       <pubDate>Wed, 24 Jul 2019 14:56:42 -0700</pubDate>
       
-      <guid>https://wasai001.github.io/zh-cn/cleanr/</guid>
+      <guid>https://wasai001.github.io/programming/cleanr/</guid>
       <description>As part of best practice, cleaning the R environment before running the code is suggested. The following code will remove all variables and unload all libraries.
-作为最佳实践的一部分，在运行R的程序之前建议首先重置R的工作环境。下面的程序会清空R的所有变量以及程序库。
 # Clear environment of variables and functions rm(list = ls(all = TRUE)) # Clear environmet of packages if(is.null(sessionInfo()$otherPkgs) == FALSE)lapply(paste(&amp;quot;package:&amp;quot;, names(sessionInfo()$otherPkgs), sep=&amp;quot;&amp;quot;), detach, character.only = TRUE, unload = TRUE)  </description>
     </item>
     
     <item>
       <title>How to count NULLs with SQL and R</title>
-      <link>https://wasai001.github.io/posts/countnulls/</link>
+      <link>https://wasai001.github.io/programming/countnulls/</link>
       <pubDate>Mon, 22 Jul 2019 12:47:37 -0700</pubDate>
       
-      <guid>https://wasai001.github.io/posts/countnulls/</guid>
+      <guid>https://wasai001.github.io/programming/countnulls/</guid>
       <description>When representing no values, NULL and NA are used in SQL and R, respectively. Be careful that NULL in R is not the same one as NULL in SQL.
- Using SQL  select count(*) [Number of Null Salaries] from EmP where Salary is NULL   Using base R  # load the data into dataframe install.packages(&amp;quot;RODBC&amp;quot;) library(RODBC) conn &amp;lt;- odbcConnect(&amp;quot;localhost&amp;quot;) Emp &amp;lt;- sqlQuery(conn,&amp;quot;select * from capstone.dbo.Emp&amp;quot;) numNAs &amp;lt;- apply(is.</description>
+ Using SQL
+select count(*) [Number of Null Salaries] from EmP where Salary is NULL  Using base R
+# load the data into dataframe install.packages(&amp;quot;RODBC&amp;quot;) library(RODBC) conn &amp;lt;- odbcConnect(&amp;quot;localhost&amp;quot;) Emp &amp;lt;- sqlQuery(conn,&amp;quot;select * from capstone.dbo.Emp&amp;quot;) numNAs &amp;lt;- apply(is.na(Emp),2,sum) ratiosNulls &amp;lt;- numNAs/nrow(Emp) ratiosNulls # don&#39;t forget to close the connection odbcClose(conn)   </description>
     </item>
     
   </channel>

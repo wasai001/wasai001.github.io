@@ -13,19 +13,20 @@
     
     <item>
       <title>Pandas Cheat Sheet (To be continued)</title>
-      <link>https://wasai001.github.io/posts/pandascheatsheet/</link>
+      <link>https://wasai001.github.io/programming/pandascheatsheet/</link>
       <pubDate>Sat, 27 Jul 2019 13:14:15 -0700</pubDate>
       
-      <guid>https://wasai001.github.io/posts/pandascheatsheet/</guid>
-      <description> count the null values  # count by columns df.isnull().sum(axis=0) # count by rows df.isnull().sum(axis=1)  </description>
+      <guid>https://wasai001.github.io/programming/pandascheatsheet/</guid>
+      <description> count the null values
+# count by columns df.isnull().sum(axis=0) # count by rows df.isnull().sum(axis=1)   </description>
     </item>
     
     <item>
       <title>How to load data from SQL Server to Pandas Dataframe in Python</title>
-      <link>https://wasai001.github.io/posts/db2pandas/</link>
+      <link>https://wasai001.github.io/programming/db2pandas/</link>
       <pubDate>Fri, 26 Jul 2019 21:36:29 -0700</pubDate>
       
-      <guid>https://wasai001.github.io/posts/db2pandas/</guid>
+      <guid>https://wasai001.github.io/programming/db2pandas/</guid>
       <description>Here is the way of building connections between SQL Server and Python. Then import data from SQL Server to Pandas Dataframe.
 import pyodbc import pandas as pd conn = pyodbc.connect(&#39;Driver={SQL Server};&#39; &#39;Server=localhost;&#39; &#39;Database=DataBase;&#39; &#39;Trusted_Connection=yes;&#39;) query = &amp;quot;select * from DataBase.dbo.annual_demand&amp;quot; df = pd.read_sql(query, conn) conn.close()  </description>
     </item>

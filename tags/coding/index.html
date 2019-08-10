@@ -12,7 +12,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://wasai001.github.io/tags/coding/" />
 
-<meta property="og:updated_time" content="2019-07-21T19:59:56-07:00"/><meta property="og:site_name" content="Big Data Time" />
+<meta property="og:updated_time" content="2019-07-21T19:59:56-07:00" />
 
 	
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
@@ -52,13 +52,19 @@ if (!doNotTrack) {
 	</button>
 	<ul class="menu__list">
 		<li class="menu__item">
-			<a class="menu__link" href="/posts/englishposts/">Technical Posts</a>
+			<a class="menu__link" href="/machine_learning/">machine learning / AI</a>
 		</li>
 		<li class="menu__item">
-			<a class="menu__link" href="/posts/chineseposts/">技术贴</a>
+			<a class="menu__link" href="/statistics/">statistics</a>
 		</li>
 		<li class="menu__item">
-			<a class="menu__link" href="/about/">About Site | 关于本站</a>
+			<a class="menu__link" href="/programming/">programming</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/visualization/">visualization</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/about/">About Site</a>
 		</li>
 	</ul>
 </nav>
@@ -74,8 +80,8 @@ if (!doNotTrack) {
 	</header><article class="list__item post">
 	<header class="list__header">
 		<h3 class="list__title post__title ">
-			<a href="/zh-cn/remove_duplicates/" rel="bookmark">
-			Code - Remove Duplicate Files in the Folder | 编程 - 移除文件夹中的重复文件
+			<a href="/programming/remove_duplicates/" rel="bookmark">
+			Code - Remove Duplicate Files in the Folder
 			</a>
 		</h3>
 		<div class="list__meta meta">
@@ -83,16 +89,10 @@ if (!doNotTrack) {
 	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg>
 	<time class="meta__text" datetime="2019-07-21T19:59:56">July 21, 2019</time>
 </div>
-
-<div class="meta__item-categories meta__item">
-	<svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg>
-	<span class="meta__text"><a class="meta__link" href="/categories/coding-%e7%bc%96%e7%a8%8b" rel="category">Coding 编程</a></span>
-</div>
 </div>
 	</header>
 	<div class="content list__excerpt post__content clearfix">
 		This code helps me remove duplicate files, ending with -copy in the folder.
-本程序会删除文件夹中以“-copy”结尾的重复文章。
 import os arr = os.listdir() target = [] for i in arr: if &quot;- Copy.JPG&quot; in i or &quot;- Copy.jpg&quot; in i or &quot;- Copy.heic&quot; in i or &quot;- Copy.BMP&quot; in i or &quot;- Copy.PNG&quot; in i or &quot;- Copy.png&quot; in i: target.append(i) for t in target: os.remove(t)  
 	</div>
 </article>
@@ -110,41 +110,9 @@ import os arr = os.listdir() target = [] for i in arr: if &quot;- Copy.JPG&quot;
 		<input type="hidden" name="sitesearch" value="https://wasai001.github.io/" />
 	</form>
 </div>
-<div class="widget-languages widget">
-	<h4 class="widget__title">Languages</h4>
-	<div class="widget__content">
-		<ul class="widget__list">
-			<li class="widget__item">
-				<a class="widget-languages__link widget__link" href="/">
-					<span class="widget-languages__link-btn widget__link-btn btn">EN</span>
-					<span class="widget-languages__link-text widget__link-text">English</span>
-				</a>
-			</li>
-			<li class="widget__item">
-				<a class="widget-languages__link widget__link" href="/cn/">
-					<span class="widget-languages__link-btn widget__link-btn btn">CN</span>
-					<span class="widget-languages__link-text widget__link-text">中文</span>
-				</a>
-			</li>
-		</ul>
-	</div>
-</div>
-<div class="widget-categories widget">
-	<h4 class="widget__title">Categories</h4>
-	<div class="widget__content">
-		<ul class="widget__list">
-			<li class="widget__item"><a class="widget__link" href="/categories/coding-%e7%bc%96%e7%a8%8b">Coding 编程</a></li>
-			<li class="widget__item"><a class="widget__link" href="/categories/computational-simulation-%e7%94%b5%e8%84%91%e6%a8%a1%e6%8b%9f">Computational simulation 电脑模拟</a></li>
-			<li class="widget__item"><a class="widget__link" href="/categories/machine-learning-%e6%9c%ba%e5%99%a8%e5%ad%a6%e4%b9%a0">Machine learning 机器学习</a></li>
-		</ul>
-	</div>
-</div>
 <div class="widget-taglist widget">
 	<h4 class="widget__title">Tags</h4>
 	<div class="widget__content">
-		<a class="widget-taglist__link widget__link btn" href="/tags/architecture-design" title="Architecture design">Architecture design</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/capstone" title="Capstone">Capstone</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/cfd" title="Cfd">Cfd</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/cheat-sheet" title="Cheat sheet">Cheat sheet</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/coding" title="Coding">Coding</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/pandas" title="Pandas">Pandas</a>
@@ -153,18 +121,17 @@ import os arr = os.listdir() target = [] for i in arr: if &quot;- Copy.JPG&quot;
 		<a class="widget-taglist__link widget__link btn" href="/tags/r" title="R">R</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/sql" title="Sql">Sql</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/sql-server" title="Sql server">Sql server</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/sustianablity" title="Sustianablity">Sustianablity</a>
 	</div>
 </div>
 <div class="widget-recent widget">
 	<h4 class="widget__title">Recent Posts</h4>
 	<div class="widget__content">
 		<ul class="widget__list">
-			<li class="widget__item"><a class="widget__link" href="/posts/pandascheatsheet/">Pandas Cheat Sheet (To be continued)</a></li>
-			<li class="widget__item"><a class="widget__link" href="/posts/db2pandas/">How to load data from SQL Server to Pandas Dataframe in Python</a></li>
-			<li class="widget__item"><a class="widget__link" href="/posts/countnulls/">How to count NULLs with SQL and R</a></li>
-			<li class="widget__item"><a class="widget__link" href="/posts/sampledata/">How to randomly sample the data from a table</a></li>
-			<li class="widget__item"><a class="widget__link" href="/posts/cfd-karamay/">The Application of CFD (Computational Fluid Dynamics) in Architecture Design</a></li>
+			<li class="widget__item"><a class="widget__link" href="/programming/pandascheatsheet/">Pandas Cheat Sheet (To be continued)</a></li>
+			<li class="widget__item"><a class="widget__link" href="/programming/db2pandas/">How to load data from SQL Server to Pandas Dataframe in Python</a></li>
+			<li class="widget__item"><a class="widget__link" href="/programming/cleanr/">How to reset R environment</a></li>
+			<li class="widget__item"><a class="widget__link" href="/programming/countnulls/">How to count NULLs with SQL and R</a></li>
+			<li class="widget__item"><a class="widget__link" href="/programming/sampledata/">How to randomly sample the data from a table</a></li>
 		</ul>
 	</div>
 </div>
@@ -185,8 +152,8 @@ import os arr = os.listdir() target = [] for i in arr: if &quot;- Copy.JPG&quot;
 	<div class="container footer__container flex">
 		
 		<div class="footer__copyright">
-			&copy; 2019 Shuai Ma.
-			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+			&copy; 2019 Everything here is mine.
+			
 		</div>
 	</div>
 </footer>

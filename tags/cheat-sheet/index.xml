@@ -13,11 +13,12 @@
     
     <item>
       <title>Pandas Cheat Sheet (To be continued)</title>
-      <link>https://wasai001.github.io/posts/pandascheatsheet/</link>
+      <link>https://wasai001.github.io/programming/pandascheatsheet/</link>
       <pubDate>Sat, 27 Jul 2019 13:14:15 -0700</pubDate>
       
-      <guid>https://wasai001.github.io/posts/pandascheatsheet/</guid>
-      <description> count the null values  # count by columns df.isnull().sum(axis=0) # count by rows df.isnull().sum(axis=1)  </description>
+      <guid>https://wasai001.github.io/programming/pandascheatsheet/</guid>
+      <description> count the null values
+# count by columns df.isnull().sum(axis=0) # count by rows df.isnull().sum(axis=1)   </description>
     </item>
     
   </channel>
