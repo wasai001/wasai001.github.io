@@ -6,6 +6,7 @@
     <description>Recent content on Big Data Time</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
+    <copyright>&amp;copy;Everything here is mine 2019</copyright>
     <lastBuildDate>Sun, 11 Aug 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://wasai001.github.io/index.xml" rel="self" type="application/rss+xml" />
@@ -61,7 +62,7 @@ import os arr = os.listdir() target = [] for i in arr: if &amp;quot;- Copy.JPG&a
     </item>
     
     <item>
-      <title>About Site</title>
+      <title>about site</title>
       <link>https://wasai001.github.io/about/</link>
       <pubDate>Fri, 12 Jul 2019 00:00:00 +0000</pubDate>
       
