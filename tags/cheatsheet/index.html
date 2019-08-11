@@ -19,7 +19,7 @@ if (!doNotTrack) {
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>
       
-  Categories &ndash; Big Data Time
+  Cheatsheet &ndash; Big Data Time
 
     </title>
     
@@ -99,8 +99,119 @@ if (!doNotTrack) {
 
 <div>
 
-  <h1>Categories</h1>
+  <h1>Cheatsheet</h1>
   
+
+  
+    
+    
+<div class="rounded-2 box-shadow-medium px-3 pb-2 pt-2 mb-3">
+  <div class="Subhead mb-2">
+    <div class="Subhead-heading">
+      <a href="/programming/python/">
+        <div class="h2 mt-1 mb-1">Python Cheatsheet</div>
+      </a>
+    </div>
+    <div class="Subhead-description">
+      
+
+
+
+
+<a href='/tags/python' class="muted-link">
+  <span class="Label Label--gray">python</span>
+</a>
+
+<a href='/tags/cheatsheet' class="muted-link">
+  <span class="Label Label--gray">Cheatsheet</span>
+</a>
+
+
+      <div class="float-md-right">
+        <span>2019-08-09</span>
+      </div>
+    </div>
+  </div>
+  <div class="text-gray">
+    
+     Import Data Import Data from SQL Server into Pandas import pyodbc import pandas as pd conn = pyodbc.connect('Driver={SQL Server};' 'Server=localhost;' 'Database=DataBase;' 'Trusted_Connection=yes;') query = &quot;select * from DataBase.dbo.annual_demand&quot; df = pd.read_sql(query, conn) conn.close()  EDA count null values # count by columns df.isnull().sum(axis=0) # count by rows df.isnull().sum(axis=1)  
+    <a class="muted-link" href="/programming/python/">…</a>
+  </div>
+</div>
+
+  
+    
+    
+<div class="rounded-2 box-shadow-medium px-3 pb-2 pt-2 mb-3">
+  <div class="Subhead mb-2">
+    <div class="Subhead-heading">
+      <a href="/programming/r/">
+        <div class="h2 mt-1 mb-1">R Cheatsheet</div>
+      </a>
+    </div>
+    <div class="Subhead-description">
+      
+
+
+
+
+<a href='/tags/r' class="muted-link">
+  <span class="Label Label--gray">r</span>
+</a>
+
+<a href='/tags/cheatsheet' class="muted-link">
+  <span class="Label Label--gray">Cheatsheet</span>
+</a>
+
+
+      <div class="float-md-right">
+        <span>2019-08-09</span>
+      </div>
+    </div>
+  </div>
+  <div class="text-gray">
+    
+    Reset R Environment # Clear environment of variables and functions rm(list = ls(all = TRUE)) # Clear environmet of packages if(is.null(sessionInfo()$otherPkgs) == FALSE)lapply(paste(&quot;package:&quot;, names(sessionInfo()$otherPkgs), sep=&quot;&quot;), detach, character.only = TRUE, unload = TRUE)  Import Data # from SQL install.packages(&quot;RODBC&quot;) library(RODBC) conn &lt;- odbcConnect(&quot;localhost&quot;) Emp &lt;- sqlQuery(conn,&quot;select * from capstone.dbo.Emp&quot;) odbcClose(conn) # from CSV all_acquired &lt;- read.csv('../filesPath/finalData.csv')  EDA High Level Preview head(df,20) summary(df) str(df)  Count Null Values numNAs &lt;- apply(is.
+    <a class="muted-link" href="/programming/r/">…</a>
+  </div>
+</div>
+
+  
+    
+    
+<div class="rounded-2 box-shadow-medium px-3 pb-2 pt-2 mb-3">
+  <div class="Subhead mb-2">
+    <div class="Subhead-heading">
+      <a href="/programming/sql/">
+        <div class="h2 mt-1 mb-1">SQL Cheatsheet</div>
+      </a>
+    </div>
+    <div class="Subhead-description">
+      
+
+
+
+
+<a href='/tags/sql' class="muted-link">
+  <span class="Label Label--gray">sql</span>
+</a>
+
+<a href='/tags/cheatsheet' class="muted-link">
+  <span class="Label Label--gray">Cheatsheet</span>
+</a>
+
+
+      <div class="float-md-right">
+        <span>2019-08-09</span>
+      </div>
+    </div>
+  </div>
+  <div class="text-gray">
+    
+     Count Null Values select count(*) [Number of Null Salaries] from EmP where Salary is NULL  Draw a Sample select count(*) from Person.Person SELECT FirstName, LastName FROM Person.Person TABLESAMPLE (10 PERCENT);  
+    <a class="muted-link" href="/programming/sql/">…</a>
+  </div>
+</div>
 
   
 

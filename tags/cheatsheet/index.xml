@@ -1,28 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Big Data Time</title>
-    <link>https://wasai001.github.io/</link>
-    <description>Recent content on Big Data Time</description>
+    <title>Cheatsheet on Big Data Time</title>
+    <link>https://wasai001.github.io/tags/cheatsheet/</link>
+    <description>Recent content in Cheatsheet on Big Data Time</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>&amp;copy;Everything here is mine 2019</copyright>
-    <lastBuildDate>Sun, 11 Aug 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 09 Aug 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://wasai001.github.io/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://wasai001.github.io/tags/cheatsheet/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Random Forest</title>
-      <link>https://wasai001.github.io/machine_learning/randomforest/</link>
-      <pubDate>Sun, 11 Aug 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://wasai001.github.io/machine_learning/randomforest/</guid>
-      <description>Introduction of Random Forest (RF) Algorithm  With excellent performance on all eight metrics, calibrated boosted trees were the best learning algorithm overall. Random forests are close second, followed by uncalibrated bagged trees, calibrated SVMs, and un- calibrated neural nets.
-​ &amp;ndash; Rich Caruana, Alexandru Niculescu-Mizil
-link: https://www.cs.cornell.edu/~caruana/ctp/ct.papers/caruana.icml06.pdf
- Definition Decision Tree is a schematic, tree-shaped diagram used to determine a course of action or show a statistical probability. Each branch of the decision tree represents a possible decision, occurrence or reaction.</description>
-    </item>
     
     <item>
       <title>Python Cheatsheet</title>
@@ -49,25 +37,6 @@ link: https://www.cs.cornell.edu/~caruana/ctp/ct.papers/caruana.icml06.pdf
       
       <guid>https://wasai001.github.io/programming/sql/</guid>
       <description> Count Null Values select count(*) [Number of Null Salaries] from EmP where Salary is NULL  Draw a Sample select count(*) from Person.Person SELECT FirstName, LastName FROM Person.Person TABLESAMPLE (10 PERCENT);  </description>
-    </item>
-    
-    <item>
-      <title>Code - Remove Duplicate Files in the Folder</title>
-      <link>https://wasai001.github.io/programming/remove_duplicates/</link>
-      <pubDate>Sun, 21 Jul 2019 19:59:56 -0700</pubDate>
-      
-      <guid>https://wasai001.github.io/programming/remove_duplicates/</guid>
-      <description>This code helps me remove duplicate files, ending with -copy in the folder.
-import os arr = os.listdir() target = [] for i in arr: if &amp;quot;- Copy.JPG&amp;quot; in i or &amp;quot;- Copy.jpg&amp;quot; in i or &amp;quot;- Copy.heic&amp;quot; in i or &amp;quot;- Copy.BMP&amp;quot; in i or &amp;quot;- Copy.PNG&amp;quot; in i or &amp;quot;- Copy.png&amp;quot; in i: target.append(i) for t in target: os.remove(t)  </description>
-    </item>
-    
-    <item>
-      <title>about site</title>
-      <link>https://wasai001.github.io/about/</link>
-      <pubDate>Fri, 12 Jul 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://wasai001.github.io/about/</guid>
-      <description>Thanks for reading! this is english</description>
     </item>
     
   </channel>
