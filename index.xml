@@ -67,7 +67,7 @@ import os arr = os.listdir() target = [] for i in arr: if &amp;quot;- Copy.JPG&a
       <pubDate>Fri, 12 Jul 2019 00:00:00 +0000</pubDate>
       
       <guid>https://wasai001.github.io/about/</guid>
-      <description>Thanks for reading! this is english</description>
+      <description>Thanks for reading! You can reach me at seattle-hawk@outlook.com</description>
     </item>
     
   </channel>
