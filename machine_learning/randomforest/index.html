@@ -19,12 +19,12 @@ if (!doNotTrack) {
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>
       
-  Random Forest &ndash; Big Data Time
+  Introduction of Random Forest (RF) Algorithm &ndash; Big Data Time
 
     </title>
     
     
-    <meta name="description" property="og:description" content="Introduction of Random Forest (RF) Algorithm  With excellent performance on all eight metrics, calibrated boosted trees were the best learning algorithm overall. Random forests are close second, followed by uncalibrated bagged trees, calibrated SVMs, and un- calibrated neural nets.
+    <meta name="description" property="og:description" content="With excellent performance on all eight metrics, calibrated boosted trees were the best learning algorithm overall. Random forests are close second, followed by uncalibrated bagged trees, calibrated SVMs, and un- calibrated neural nets.
 ​ &amp;ndash; Rich Caruana, Alexandru Niculescu-Mizil
 link: https://www.cs.cornell.edu/~caruana/ctp/ct.papers/caruana.icml06.pdf
  Definition Decision Tree is a schematic, tree-shaped diagram used to determine a course of action or show a statistical probability. Each branch of the decision tree represents a possible decision, occurrence or reaction.|">
@@ -102,7 +102,7 @@ link: https://www.cs.cornell.edu/~caruana/ctp/ct.papers/caruana.icml06.pdf
 
 <div class="Subhead">
   <div class="Subhead-heading">
-    <div class="h1 mt-3 mb-1">Random Forest</div>
+    <div class="h1 mt-3 mb-1">Introduction of Random Forest (RF) Algorithm</div>
   </div>
   <div class="Subhead-description">
     
@@ -131,8 +131,6 @@ link: https://www.cs.cornell.edu/~caruana/ctp/ct.papers/caruana.icml06.pdf
   
   <section class="pb-6 mb-3 border-bottom">
     
-
-<h1 id="introduction-of-random-forest-rf-algorithm">Introduction of Random Forest (RF) Algorithm</h1>
 
 <blockquote>
 <p>With excellent performance on all eight metrics, calibrated boosted trees were the best learning algorithm overall. Random forests are close second, followed by uncalibrated bagged trees, calibrated SVMs, and un- calibrated neural nets.</p>
@@ -185,11 +183,11 @@ link: https://www.cs.cornell.edu/~caruana/ctp/ct.papers/caruana.icml06.pdf
 
 <p><img src="https://slideplayer.com/slide/5051116/16/images/2/General+Idea.jpg" alt="img" /></p>
 
-<h2 id="use-bootstrapping-to-build-a-random-forest">Use Bootstrapping to Build a Random Forest</h2>
+<h2 id="visualization-of-bootstrapping">Visualization of Bootstrapping</h2>
 
 <p><img src="https://raw.githubusercontent.com/wasai001/wasai001.github.io/master/img/randomforest-boostrapping.png" alt="" /></p>
 
-<h3 id="building-a-forest">Building a Forest</h3>
+<h2 id="building-a-forest-with-ensenble">Building a Forest with Ensenble</h2>
 
 <p><img src="https://raw.githubusercontent.com/wasai001/wasai001.github.io/master/img/randomforest-ensemble.png" alt="" /></p>
 
@@ -285,19 +283,17 @@ table(predTrain, TrainSet$Condition)
           
   
     <div id="toc" class="Box Box--blue mb-3">
-      <b>Random Forest</b>
+      <b>Introduction of Random Forest (RF) Algorithm</b>
       <nav id="TableOfContents">
 <ul>
-<li><a href="#introduction-of-random-forest-rf-algorithm">Introduction of Random Forest (RF) Algorithm</a>
+<li>
 <ul>
 <li><a href="#definition">Definition</a></li>
 <li><a href="#splitting-criteria">Splitting Criteria</a></li>
 <li><a href="#algorithm">Algorithm</a></li>
 <li><a href="#visualization-of-bagging">Visualization of Bagging</a></li>
-<li><a href="#use-bootstrapping-to-build-a-random-forest">Use Bootstrapping to Build a Random Forest</a>
-<ul>
-<li><a href="#building-a-forest">Building a Forest</a></li>
-</ul></li>
+<li><a href="#visualization-of-bootstrapping">Visualization of Bootstrapping</a></li>
+<li><a href="#building-a-forest-with-ensenble">Building a Forest with Ensenble</a></li>
 <li><a href="#advantage-of-random-forest">Advantage of Random Forest</a></li>
 <li><a href="#disadvantage-of-random-forest">Disadvantage of Random Forest</a></li>
 <li><a href="#apply-in-python">Apply in Python</a></li>

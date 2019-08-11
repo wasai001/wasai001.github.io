@@ -13,12 +13,12 @@
     
     
     <item>
-      <title>Random Forest</title>
+      <title>Introduction of Random Forest (RF) Algorithm</title>
       <link>https://wasai001.github.io/machine_learning/randomforest/</link>
       <pubDate>Sun, 11 Aug 2019 00:00:00 +0000</pubDate>
       
       <guid>https://wasai001.github.io/machine_learning/randomforest/</guid>
-      <description>Introduction of Random Forest (RF) Algorithm  With excellent performance on all eight metrics, calibrated boosted trees were the best learning algorithm overall. Random forests are close second, followed by uncalibrated bagged trees, calibrated SVMs, and un- calibrated neural nets.
+      <description>With excellent performance on all eight metrics, calibrated boosted trees were the best learning algorithm overall. Random forests are close second, followed by uncalibrated bagged trees, calibrated SVMs, and un- calibrated neural nets.
 ​ &amp;ndash; Rich Caruana, Alexandru Niculescu-Mizil
 link: https://www.cs.cornell.edu/~caruana/ctp/ct.papers/caruana.icml06.pdf
  Definition Decision Tree is a schematic, tree-shaped diagram used to determine a course of action or show a statistical probability. Each branch of the decision tree represents a possible decision, occurrence or reaction.</description>
