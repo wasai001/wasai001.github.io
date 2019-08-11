@@ -1,36 +1,23 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>R on Big Data Time</title>
+    <title>r on Big Data Time</title>
     <link>https://wasai001.github.io/tags/r/</link>
-    <description>Recent content in R on Big Data Time</description>
+    <description>Recent content in r on Big Data Time</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 24 Jul 2019 14:56:42 -0700</lastBuildDate>
+    <lastBuildDate>Fri, 09 Aug 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://wasai001.github.io/tags/r/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>How to reset R environment</title>
-      <link>https://wasai001.github.io/programming/cleanr/</link>
-      <pubDate>Wed, 24 Jul 2019 14:56:42 -0700</pubDate>
+      <title>Cheat Sheet - R</title>
+      <link>https://wasai001.github.io/programming/r/</link>
+      <pubDate>Fri, 09 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://wasai001.github.io/programming/cleanr/</guid>
-      <description>As part of best practice, cleaning the R environment before running the code is suggested. The following code will remove all variables and unload all libraries.
-# Clear environment of variables and functions rm(list = ls(all = TRUE)) # Clear environmet of packages if(is.null(sessionInfo()$otherPkgs) == FALSE)lapply(paste(&amp;quot;package:&amp;quot;, names(sessionInfo()$otherPkgs), sep=&amp;quot;&amp;quot;), detach, character.only = TRUE, unload = TRUE)  </description>
-    </item>
-    
-    <item>
-      <title>How to count NULLs with SQL and R</title>
-      <link>https://wasai001.github.io/programming/countnulls/</link>
-      <pubDate>Mon, 22 Jul 2019 12:47:37 -0700</pubDate>
-      
-      <guid>https://wasai001.github.io/programming/countnulls/</guid>
-      <description>When representing no values, NULL and NA are used in SQL and R, respectively. Be careful that NULL in R is not the same one as NULL in SQL.
- Using SQL
-select count(*) [Number of Null Salaries] from EmP where Salary is NULL  Using base R
-# load the data into dataframe install.packages(&amp;quot;RODBC&amp;quot;) library(RODBC) conn &amp;lt;- odbcConnect(&amp;quot;localhost&amp;quot;) Emp &amp;lt;- sqlQuery(conn,&amp;quot;select * from capstone.dbo.Emp&amp;quot;) numNAs &amp;lt;- apply(is.na(Emp),2,sum) ratiosNulls &amp;lt;- numNAs/nrow(Emp) ratiosNulls # don&#39;t forget to close the connection odbcClose(conn)   </description>
+      <guid>https://wasai001.github.io/programming/r/</guid>
+      <description>Reset R Environment # Clear environment of variables and functions rm(list = ls(all = TRUE)) # Clear environmet of packages if(is.null(sessionInfo()$otherPkgs) == FALSE)lapply(paste(&amp;quot;package:&amp;quot;, names(sessionInfo()$otherPkgs), sep=&amp;quot;&amp;quot;), detach, character.only = TRUE, unload = TRUE)  Import Data # from SQL install.packages(&amp;quot;RODBC&amp;quot;) library(RODBC) conn &amp;lt;- odbcConnect(&amp;quot;localhost&amp;quot;) Emp &amp;lt;- sqlQuery(conn,&amp;quot;select * from capstone.dbo.Emp&amp;quot;) odbcClose(conn) # from CSV all_acquired &amp;lt;- read.csv(&#39;../filesPath/finalData.csv&#39;)  EDA High Level Preview head(df,20) summary(df) str(df)  Count Null Values numNAs &amp;lt;- apply(is.</description>
     </item>
     
   </channel>

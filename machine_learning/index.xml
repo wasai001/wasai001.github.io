@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Machine_learnings on Big Data Time</title>
+    <link>https://wasai001.github.io/machine_learning/</link>
+    <description>Recent content in Machine_learnings on Big Data Time</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 11 Aug 2019 12:29:01 -0700</lastBuildDate>
+    
+	<atom:link href="https://wasai001.github.io/machine_learning/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Random Forest</title>
+      <link>https://wasai001.github.io/machine_learning/randomforest/</link>
+      <pubDate>Sun, 11 Aug 2019 12:29:01 -0700</pubDate>
+      
+      <guid>https://wasai001.github.io/machine_learning/randomforest/</guid>
+      <description>Introduction of Random Forest (RF) Algorithm  With excellent performance on all eight metrics, calibrated boosted trees were the best learning algorithm overall. Random forests are close second, followed by uncalibrated bagged trees, calibrated SVMs, and un- calibrated neural nets.
+​ &amp;ndash; Rich Caruana, Alexandru Niculescu-Mizil
+link: https://www.cs.cornell.edu/~caruana/ctp/ct.papers/caruana.icml06.pdf
+ Definition Decision Tree is a schematic, tree-shaped diagram used to determine a course of action or show a statistical probability. Each branch of the decision tree represents a possible decision, occurrence or reaction.</description>
+    </item>
+    
+  </channel>
+</rss>

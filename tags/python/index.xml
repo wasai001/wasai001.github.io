@@ -1,34 +1,23 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Python on Big Data Time</title>
+    <title>python on Big Data Time</title>
     <link>https://wasai001.github.io/tags/python/</link>
-    <description>Recent content in Python on Big Data Time</description>
+    <description>Recent content in python on Big Data Time</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 27 Jul 2019 13:14:15 -0700</lastBuildDate>
+    <lastBuildDate>Fri, 09 Aug 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://wasai001.github.io/tags/python/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Pandas Cheat Sheet (To be continued)</title>
-      <link>https://wasai001.github.io/programming/pandascheatsheet/</link>
-      <pubDate>Sat, 27 Jul 2019 13:14:15 -0700</pubDate>
+      <title>Cheat Sheet - Python</title>
+      <link>https://wasai001.github.io/programming/python/</link>
+      <pubDate>Fri, 09 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://wasai001.github.io/programming/pandascheatsheet/</guid>
-      <description> count the null values
-# count by columns df.isnull().sum(axis=0) # count by rows df.isnull().sum(axis=1)   </description>
-    </item>
-    
-    <item>
-      <title>How to load data from SQL Server to Pandas Dataframe in Python</title>
-      <link>https://wasai001.github.io/programming/db2pandas/</link>
-      <pubDate>Fri, 26 Jul 2019 21:36:29 -0700</pubDate>
-      
-      <guid>https://wasai001.github.io/programming/db2pandas/</guid>
-      <description>Here is the way of building connections between SQL Server and Python. Then import data from SQL Server to Pandas Dataframe.
-import pyodbc import pandas as pd conn = pyodbc.connect(&#39;Driver={SQL Server};&#39; &#39;Server=localhost;&#39; &#39;Database=DataBase;&#39; &#39;Trusted_Connection=yes;&#39;) query = &amp;quot;select * from DataBase.dbo.annual_demand&amp;quot; df = pd.read_sql(query, conn) conn.close()  </description>
+      <guid>https://wasai001.github.io/programming/python/</guid>
+      <description> Import Data Import Data from SQL Server into Pandas import pyodbc import pandas as pd conn = pyodbc.connect(&#39;Driver={SQL Server};&#39; &#39;Server=localhost;&#39; &#39;Database=DataBase;&#39; &#39;Trusted_Connection=yes;&#39;) query = &amp;quot;select * from DataBase.dbo.annual_demand&amp;quot; df = pd.read_sql(query, conn) conn.close()  EDA count null values # count by columns df.isnull().sum(axis=0) # count by rows df.isnull().sum(axis=1)  </description>
     </item>
     
     <item>

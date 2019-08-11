@@ -1,24 +1,41 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Cheat Sheet on Big Data Time</title>
+    <title>cheat sheet on Big Data Time</title>
     <link>https://wasai001.github.io/tags/cheat-sheet/</link>
-    <description>Recent content in Cheat Sheet on Big Data Time</description>
+    <description>Recent content in cheat sheet on Big Data Time</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 27 Jul 2019 13:14:15 -0700</lastBuildDate>
+    <lastBuildDate>Fri, 09 Aug 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://wasai001.github.io/tags/cheat-sheet/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Pandas Cheat Sheet (To be continued)</title>
-      <link>https://wasai001.github.io/programming/pandascheatsheet/</link>
-      <pubDate>Sat, 27 Jul 2019 13:14:15 -0700</pubDate>
+      <title>Cheat Sheet - Python</title>
+      <link>https://wasai001.github.io/programming/python/</link>
+      <pubDate>Fri, 09 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://wasai001.github.io/programming/pandascheatsheet/</guid>
-      <description> count the null values
-# count by columns df.isnull().sum(axis=0) # count by rows df.isnull().sum(axis=1)   </description>
+      <guid>https://wasai001.github.io/programming/python/</guid>
+      <description> Import Data Import Data from SQL Server into Pandas import pyodbc import pandas as pd conn = pyodbc.connect(&#39;Driver={SQL Server};&#39; &#39;Server=localhost;&#39; &#39;Database=DataBase;&#39; &#39;Trusted_Connection=yes;&#39;) query = &amp;quot;select * from DataBase.dbo.annual_demand&amp;quot; df = pd.read_sql(query, conn) conn.close()  EDA count null values # count by columns df.isnull().sum(axis=0) # count by rows df.isnull().sum(axis=1)  </description>
+    </item>
+    
+    <item>
+      <title>Cheat Sheet - R</title>
+      <link>https://wasai001.github.io/programming/r/</link>
+      <pubDate>Fri, 09 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://wasai001.github.io/programming/r/</guid>
+      <description>Reset R Environment # Clear environment of variables and functions rm(list = ls(all = TRUE)) # Clear environmet of packages if(is.null(sessionInfo()$otherPkgs) == FALSE)lapply(paste(&amp;quot;package:&amp;quot;, names(sessionInfo()$otherPkgs), sep=&amp;quot;&amp;quot;), detach, character.only = TRUE, unload = TRUE)  Import Data # from SQL install.packages(&amp;quot;RODBC&amp;quot;) library(RODBC) conn &amp;lt;- odbcConnect(&amp;quot;localhost&amp;quot;) Emp &amp;lt;- sqlQuery(conn,&amp;quot;select * from capstone.dbo.Emp&amp;quot;) odbcClose(conn) # from CSV all_acquired &amp;lt;- read.csv(&#39;../filesPath/finalData.csv&#39;)  EDA High Level Preview head(df,20) summary(df) str(df)  Count Null Values numNAs &amp;lt;- apply(is.</description>
+    </item>
+    
+    <item>
+      <title>Cheat Sheet - SQL</title>
+      <link>https://wasai001.github.io/programming/sql/</link>
+      <pubDate>Fri, 09 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://wasai001.github.io/programming/sql/</guid>
+      <description> Count Null Values select count(*) [Number of Null Salaries] from EmP where Salary is NULL  Draw a Sample select count(*) from Person.Person SELECT FirstName, LastName FROM Person.Person TABLESAMPLE (10 PERCENT);  </description>
     </item>
     
   </channel>

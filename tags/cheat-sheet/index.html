@@ -4,15 +4,15 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Cheat Sheet - Big Data Time</title>
+	<title>cheat sheet - Big Data Time</title>
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
 	<meta name="description" content="">
-	<meta property="og:title" content="Cheat Sheet" />
+	<meta property="og:title" content="cheat sheet" />
 <meta property="og:description" content="Shuai&#39;s personal blog about big　data and data science" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://wasai001.github.io/tags/cheat-sheet/" />
 
-<meta property="og:updated_time" content="2019-07-27T13:14:15-07:00" />
+<meta property="og:updated_time" content="2019-08-09T00:00:00+00:00" />
 
 	
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
@@ -76,24 +76,57 @@ if (!doNotTrack) {
 			
 <main class="main list" role="main">
 	<header class="main__header">
-		<h1 class="main__title">Cheat Sheet</h1>
+		<h1 class="main__title">cheat sheet</h1>
 	</header><article class="list__item post">
 	<header class="list__header">
 		<h3 class="list__title post__title ">
-			<a href="/programming/pandascheatsheet/" rel="bookmark">
-			Pandas Cheat Sheet (To be continued)
+			<a href="/programming/python/" rel="bookmark">
+			Cheat Sheet - Python
 			</a>
 		</h3>
 		<div class="list__meta meta">
 <div class="meta__item-datetime meta__item">
 	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg>
-	<time class="meta__text" datetime="2019-07-27T13:14:15">July 27, 2019</time>
+	<time class="meta__text" datetime="2019-08-09T00:00:00">August 09, 2019</time>
 </div>
 </div>
 	</header>
 	<div class="content list__excerpt post__content clearfix">
-		 count the null values
-# count by columns df.isnull().sum(axis=0) # count by rows df.isnull().sum(axis=1)   
+		 Import Data Import Data from SQL Server into Pandas import pyodbc import pandas as pd conn = pyodbc.connect('Driver={SQL Server};' 'Server=localhost;' 'Database=DataBase;' 'Trusted_Connection=yes;') query = &quot;select * from DataBase.dbo.annual_demand&quot; df = pd.read_sql(query, conn) conn.close()  EDA count null values # count by columns df.isnull().sum(axis=0) # count by rows df.isnull().sum(axis=1)  
+	</div>
+</article><article class="list__item post">
+	<header class="list__header">
+		<h3 class="list__title post__title ">
+			<a href="/programming/r/" rel="bookmark">
+			Cheat Sheet - R
+			</a>
+		</h3>
+		<div class="list__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg>
+	<time class="meta__text" datetime="2019-08-09T00:00:00">August 09, 2019</time>
+</div>
+</div>
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		Reset R Environment # Clear environment of variables and functions rm(list = ls(all = TRUE)) # Clear environmet of packages if(is.null(sessionInfo()$otherPkgs) == FALSE)lapply(paste(&quot;package:&quot;, names(sessionInfo()$otherPkgs), sep=&quot;&quot;), detach, character.only = TRUE, unload = TRUE)  Import Data # from SQL install.packages(&quot;RODBC&quot;) library(RODBC) conn &lt;- odbcConnect(&quot;localhost&quot;) Emp &lt;- sqlQuery(conn,&quot;select * from capstone.dbo.Emp&quot;) odbcClose(conn) # from CSV all_acquired &lt;- read.csv('../filesPath/finalData.csv')  EDA High Level Preview head(df,20) summary(df) str(df)  Count Null Values numNAs &lt;- apply(is.
+	</div>
+</article><article class="list__item post">
+	<header class="list__header">
+		<h3 class="list__title post__title ">
+			<a href="/programming/sql/" rel="bookmark">
+			Cheat Sheet - SQL
+			</a>
+		</h3>
+		<div class="list__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg>
+	<time class="meta__text" datetime="2019-08-09T00:00:00">August 09, 2019</time>
+</div>
+</div>
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		 Count Null Values select count(*) [Number of Null Salaries] from EmP where Salary is NULL  Draw a Sample select count(*) from Person.Person SELECT FirstName, LastName FROM Person.Person TABLESAMPLE (10 PERCENT);  
 	</div>
 </article>
 </main>
@@ -114,24 +147,20 @@ if (!doNotTrack) {
 	<h4 class="widget__title">Tags</h4>
 	<div class="widget__content">
 		<a class="widget-taglist__link widget__link btn" href="/tags/cheat-sheet" title="Cheat sheet">Cheat sheet</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/coding" title="Coding">Coding</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/pandas" title="Pandas">Pandas</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/programming" title="Programming">Programming</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/mahine-learning" title="Mahine learning">Mahine learning</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/python" title="Python">Python</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/r" title="R">R</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/sql" title="Sql">Sql</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/sql-server" title="Sql server">Sql server</a>
 	</div>
 </div>
 <div class="widget-recent widget">
 	<h4 class="widget__title">Recent Posts</h4>
 	<div class="widget__content">
 		<ul class="widget__list">
-			<li class="widget__item"><a class="widget__link" href="/programming/pandascheatsheet/">Pandas Cheat Sheet (To be continued)</a></li>
-			<li class="widget__item"><a class="widget__link" href="/programming/db2pandas/">How to load data from SQL Server to Pandas Dataframe in Python</a></li>
-			<li class="widget__item"><a class="widget__link" href="/programming/cleanr/">How to reset R environment</a></li>
-			<li class="widget__item"><a class="widget__link" href="/programming/countnulls/">How to count NULLs with SQL and R</a></li>
-			<li class="widget__item"><a class="widget__link" href="/programming/sampledata/">How to randomly sample the data from a table</a></li>
+			<li class="widget__item"><a class="widget__link" href="/programming/python/">Cheat Sheet - Python</a></li>
+			<li class="widget__item"><a class="widget__link" href="/programming/r/">Cheat Sheet - R</a></li>
+			<li class="widget__item"><a class="widget__link" href="/programming/sql/">Cheat Sheet - SQL</a></li>
+			<li class="widget__item"><a class="widget__link" href="/programming/remove_duplicates/">Code - Remove Duplicate Files in the Folder</a></li>
 		</ul>
 	</div>
 </div>

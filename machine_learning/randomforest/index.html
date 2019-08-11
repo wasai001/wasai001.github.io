@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Random Forest - Big Data Time</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+	<meta property="og:title" content="Random Forest" />
+<meta property="og:description" content="Introduction of Random Forest (RF) Algorithm  With excellent performance on all eight metrics, calibrated boosted trees were the best learning algorithm overall. Random forests are close second, followed by uncalibrated bagged trees, calibrated SVMs, and un- calibrated neural nets.
+​ &ndash; Rich Caruana, Alexandru Niculescu-Mizil
+link: https://www.cs.cornell.edu/~caruana/ctp/ct.papers/caruana.icml06.pdf
+ Definition Decision Tree is a schematic, tree-shaped diagram used to determine a course of action or show a statistical probability. Each branch of the decision tree represents a possible decision, occurrence or reaction." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://wasai001.github.io/machine_learning/randomforest/" />
+<meta property="article:published_time" content="2019-08-11T12:29:01-07:00" />
+<meta property="article:modified_time" content="2019-08-11T12:29:01-07:00" />
+
+	
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+	<link rel="stylesheet" href="/css/style.css">
+	
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-138240662-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container">
+		<div class="logo">
+			<a class="logo__link" href="/" title="Big Data Time" rel="home">
+				<div class="logo__title">Big Data Time</div>
+				<div class="logo__tagline">study notes about big data and Artificial Intelligence</div>
+			</a>
+		</div>
+		
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">Menu</span>
+	</button>
+	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="/machine_learning/">machine learning / AI</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/statistics/">statistics</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/programming/">programming</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/visualization/">visualization</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/about/">About Site</a>
+		</li>
+	</ul>
+</nav>
+
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">Random Forest</h1>
+			<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg>
+	<time class="meta__text" datetime="2019-08-11T12:29:01">August 11, 2019</time>
+</div>
+</div>
+		</header><div class="content post__content clearfix">
+			
+
+<h1 id="introduction-of-random-forest-rf-algorithm">Introduction of Random Forest (RF) Algorithm</h1>
+
+<blockquote>
+<p>With excellent performance on all eight metrics, calibrated boosted trees were the best learning algorithm overall. Random forests are close second, followed by uncalibrated bagged trees, calibrated SVMs, and un- calibrated neural nets.</p>
+
+<p>​                                                                                                         &ndash; Rich Caruana, Alexandru Niculescu-Mizil</p>
+
+<p>link: <a href="https://www.cs.cornell.edu/~caruana/ctp/ct.papers/caruana.icml06.pdf">https://www.cs.cornell.edu/~caruana/ctp/ct.papers/caruana.icml06.pdf</a></p>
+</blockquote>
+
+<h2 id="definition">Definition</h2>
+
+<p><strong>Decision Tree</strong> is a schematic, tree-shaped diagram used to determine a course of action or show a statistical probability. Each branch of the decision tree represents a possible decision, occurrence or reaction. The tree is structured to show how and why one choice may lead to the next, with the use of the branches indicating each option is mutually exclusive.</p>
+
+<p><strong>Random Forests</strong> are a combination of tree predictors such that each tree depends on the values of a random vector sampled independently and with the same distribution for all trees in the forest.</p>
+
+<h2 id="splitting-criteria">Splitting Criteria</h2>
+
+<ul>
+<li>Information Gain</li>
+<li>Entropy Gain</li>
+<li>Variance</li>
+<li>Gini Index (Binary only)</li>
+<li>Chi Square</li>
+<li>Etc</li>
+</ul>
+
+<p><strong>Example of Good Split and Bad Split</strong></p>
+
+<p><img src="https://www.aunalytics.com/wp-content/uploads/2015/01/DecisionTree_BlogImages_1-15-03.png" alt="Gini Coefficient illustration" /></p>
+
+<h2 id="algorithm">Algorithm</h2>
+
+<p><strong>Random Forest for Regression or Classification</strong></p>
+
+<ol>
+<li>For t = 1 to B: (Construct B trees)</li>
+</ol>
+
+<p>1.1 Choose a bootstrap sample D(t) from D of size N from the training data.</p>
+
+<p>1.2 Grow a random-forest tree T(i) to the bootstrapped data, by recursively repeating the following steps for each leaf node of the tree, until the minimum node size n(min) is reached.</p>
+
+<p>1.2.1 Select m variables at random from the M variables</p>
+
+<p>1.2.2 Pick the best variable/split-point among the m.</p>
+
+<p>1.2.3 Split the node into two daughter nodes</p>
+
+<ol>
+<li>Output the ensemble of trees {Tb}^B(1)</li>
+</ol>
+
+<h2 id="visualization-of-bagging">Visualization of Bagging</h2>
+
+<p><img src="https://slideplayer.com/slide/5051116/16/images/2/General+Idea.jpg" alt="img" /></p>
+
+<h2 id="use-bootstrapping-to-build-a-random-forest">Use Bootstrapping to Build a Random Forest</h2>
+
+<p><img src="/static/img/randomforest-boostrapping.png" alt="" /></p>
+
+		</div>
+		
+<div class="post__tags tags clearfix">
+	<svg class="tags__icon icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item"><a class="tags__link btn" href="/tags/mahine-learning/" rel="tag">Mahine Learning</a></li>
+	</ul>
+</div>
+	</article>
+</main>
+
+<div class="authorbox clearfix">
+	<figure class="authorbox__avatar">
+		<img alt="Shuai avatar" src="/img/avatar.png" class="avatar" height="90" width="90">
+	</figure>
+	<div class="authorbox__header">
+		<span class="authorbox__name">About Shuai</span>
+	</div>
+	<div class="authorbox__description">
+		Shuai&#39;s true identity is unknown. Maybe he is a successful blogger or writer. Nobody knows it.
+	</div>
+</div>
+
+
+
+			</div>
+			
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2019 Everything here is mine.
+			
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script></body>
+</html>
