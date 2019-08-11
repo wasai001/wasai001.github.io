@@ -64,16 +64,16 @@ link: https://www.cs.cornell.edu/~caruana/ctp/ct.papers/caruana.icml06.pdf
     
     
     
-    <a class="UnderlineNav-item " href="/statistics/">
+    <a class="UnderlineNav-item " href="/programming/">
       
-      <span>statistics</span>
+      <span>programming</span>
     </a>
     
     
     
-    <a class="UnderlineNav-item " href="/programming/">
+    <a class="UnderlineNav-item " href="/statistics/">
       
-      <span>programming</span>
+      <span>statistics</span>
     </a>
     
     
@@ -189,30 +189,91 @@ link: https://www.cs.cornell.edu/~caruana/ctp/ct.papers/caruana.icml06.pdf
 
 <p><img src="https://raw.githubusercontent.com/wasai001/wasai001.github.io/master/img/randomforest-boostrapping.png" alt="" /></p>
 
+<h3 id="building-a-forest">Building a Forest</h3>
+
+<p><img src="https://raw.githubusercontent.com/wasai001/wasai001.github.io/master/img/randomforest-ensemble.png" alt="" /></p>
+
+<h2 id="advantage-of-random-forest">Advantage of Random Forest</h2>
+
+<ul>
+<li>Can solve both type of problems, classification and regression</li>
+<li>Random forests generalize well to new data</li>
+<li>It is unexcelled in accuracy among current algorithms</li>
+<li>It runs efficiently on large data bases and can handle thousands of input variables without variable
+deletion</li>
+<li>It gives estimates of what variables are important in the classification</li>
+<li>It generates an internal unbiased estimate of the generalization error as the forest building progresses</li>
+<li>It has an effective method for estimating missing data and maintains accuracy when a large proportion
+of the data are missing</li>
+<li>It computes proximities between pairs of cases that can be used in clustering, locating outliers, or give
+interesting views of the data</li>
+<li>Out-of-bag error estimate removes the need for a set aside test set</li>
+</ul>
+
+<h2 id="disadvantage-of-random-forest">Disadvantage of Random Forest</h2>
+
+<ul>
+<li>The results are less actionable because forests are not easily interpreted. Considered black box  approach for statistical modelers with little control on what the model does. Similar to a Neural Network.</li>
+<li>It surely does a good job at classification but not as good as for regression problem as it does not give precise continuous nature predictions. In case of regression, it doesn’t predict beyond the range in the training data, and that they may over-fit data sets that are particularly noisy.</li>
+</ul>
+
+<h2 id="apply-in-python">Apply in Python</h2>
+
+<pre><code class="language-python"># Import the model we are using
+from sklearn.ensemble import RandomForestRegressor
+
+# Instantiate model with 1000 decision trees
+rf = RandomForestRegressor(n_estimators = 1000, random_state = 42)
+
+# Train the model on training data
+rf.fit(train_features, train_labels);
+
+# Use the forest's predict method on the test data
+predictions = rf.predict(test_features)
+
+# Calculate the absolute errors
+errors = abs(predictions - test_labels)
+
+# Print out the mean absolute error (mae)
+print('Mean Absolute Error:', round(np.mean(errors), 2), 'degrees.')
+
+Mean Absolute Error: 3.83 degrees.
+
+# Calculate mean absolute percentage error (MAPE)
+mape = 100 * (errors / test_labels)
+
+# Calculate and display accuracy
+accuracy = 100 - np.mean(mape)
+print('Accuracy:', round(accuracy, 2), '%.')
+
+Accuracy: 93.99 %.
+</code></pre>
+
+<h2 id="apply-in-r">Apply in R</h2>
+
+<pre><code class="language-r">install.packages(&quot;randomForest&quot;)
+library(randomForest)
+	
+# Create a Random Forest model with default parameters
+model1 &lt;- randomForest(Condition ~ ., data = TrainSet, importance = TRUE)
+model1
+
+# Fine tuning parameters of Random Forest model
+model2 &lt;- randomForest(Condition ~ ., data = TrainSet, ntree = 500, mtry = 6, importance = TRUE)
+model2
+
+# Predicting on train set
+predTrain &lt;- predict(model2, TrainSet, type = &quot;class&quot;)
+
+# Checking classification accuracy
+table(predTrain, TrainSet$Condition)  
+</code></pre>
+
   </section>
 
   <section>
     
-      <div id="disqus_thread"></div>
-<script type="application/javascript">
-    var disqus_config = function () {
-    
-    
-    
-    };
-    (function() {
-        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
-            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
-            return;
-        }
-        var d = document, s = d.createElement('script'); s.async = true;
-        s.src = '//' + "https-wasai001-github-io.disqus.com" + '.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+      
     
   </section>
 </article>
@@ -233,7 +294,14 @@ link: https://www.cs.cornell.edu/~caruana/ctp/ct.papers/caruana.icml06.pdf
 <li><a href="#splitting-criteria">Splitting Criteria</a></li>
 <li><a href="#algorithm">Algorithm</a></li>
 <li><a href="#visualization-of-bagging">Visualization of Bagging</a></li>
-<li><a href="#use-bootstrapping-to-build-a-random-forest">Use Bootstrapping to Build a Random Forest</a></li>
+<li><a href="#use-bootstrapping-to-build-a-random-forest">Use Bootstrapping to Build a Random Forest</a>
+<ul>
+<li><a href="#building-a-forest">Building a Forest</a></li>
+</ul></li>
+<li><a href="#advantage-of-random-forest">Advantage of Random Forest</a></li>
+<li><a href="#disadvantage-of-random-forest">Disadvantage of Random Forest</a></li>
+<li><a href="#apply-in-python">Apply in Python</a></li>
+<li><a href="#apply-in-r">Apply in R</a></li>
 </ul></li>
 </ul>
 </nav>
