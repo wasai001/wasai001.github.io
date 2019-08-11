@@ -146,7 +146,9 @@ link: https://www.cs.cornell.edu/~caruana/ctp/ct.papers/caruana.icml06.pdf
 
 <p><strong>Random Forests</strong> are a combination of tree predictors such that each tree depends on the values of a random vector sampled independently and with the same distribution for all trees in the forest.</p>
 
-<h2 id="splitting-criteria">Splitting Criteria</h2>
+<h2 id="algorithm">Algorithm</h2>
+
+<h3 id="splitting-criteria">Splitting Criteria</h3>
 
 <ul>
 <li>Information Gain</li>
@@ -161,9 +163,7 @@ link: https://www.cs.cornell.edu/~caruana/ctp/ct.papers/caruana.icml06.pdf
 
 <p><img src="https://www.aunalytics.com/wp-content/uploads/2015/01/DecisionTree_BlogImages_1-15-03.png" alt="Gini Coefficient illustration" /></p>
 
-<h2 id="algorithm">Algorithm</h2>
-
-<p><strong>Random Forest for Regression or Classification</strong></p>
+<h3 id="regression-or-classification">Regression or Classification</h3>
 
 <p>1 For t = 1 to B: (Construct B trees)</p>
 
@@ -179,19 +179,21 @@ link: https://www.cs.cornell.edu/~caruana/ctp/ct.papers/caruana.icml06.pdf
 
 <p>2 Output the ensemble of trees {Tb}^B(1)</p>
 
-<h2 id="visualization-of-bagging">Visualization of Bagging</h2>
+<h3 id="bagging">Bagging</h3>
 
 <p><img src="https://slideplayer.com/slide/5051116/16/images/2/General+Idea.jpg" alt="img" /></p>
 
-<h2 id="visualization-of-bootstrapping">Visualization of Bootstrapping</h2>
+<h3 id="bootstrapping">Bootstrapping</h3>
 
 <p><img src="https://raw.githubusercontent.com/wasai001/wasai001.github.io/master/img/randomforest-boostrapping.png" alt="" /></p>
 
-<h2 id="building-a-forest-with-ensenble">Building a Forest with Ensenble</h2>
+<h3 id="ensemble">Ensemble</h3>
 
 <p><img src="https://raw.githubusercontent.com/wasai001/wasai001.github.io/master/img/randomforest-ensemble.png" alt="" /></p>
 
-<h2 id="advantage-of-random-forest">Advantage of Random Forest</h2>
+<h2 id="pros-vs-cons">Pros vs Cons</h2>
+
+<h3 id="pros">Pros</h3>
 
 <ul>
 <li>Can solve both type of problems, classification and regression</li>
@@ -208,14 +210,16 @@ interesting views of the data</li>
 <li>Out-of-bag error estimate removes the need for a set aside test set</li>
 </ul>
 
-<h2 id="disadvantage-of-random-forest">Disadvantage of Random Forest</h2>
+<h3 id="cons">Cons</h3>
 
 <ul>
 <li>The results are less actionable because forests are not easily interpreted. Considered black box  approach for statistical modelers with little control on what the model does. Similar to a Neural Network.</li>
 <li>It surely does a good job at classification but not as good as for regression problem as it does not give precise continuous nature predictions. In case of regression, it doesn’t predict beyond the range in the training data, and that they may over-fit data sets that are particularly noisy.</li>
 </ul>
 
-<h2 id="apply-in-python">Apply in Python</h2>
+<h2 id="application">Application</h2>
+
+<h3 id="python">Python</h3>
 
 <pre><code class="language-python"># Import the model we are using
 from sklearn.ensemble import RandomForestRegressor
@@ -247,7 +251,7 @@ print('Accuracy:', round(accuracy, 2), '%.')
 Accuracy: 93.99 %.
 </code></pre>
 
-<h2 id="apply-in-r">Apply in R</h2>
+<h3 id="r">R</h3>
 
 <pre><code class="language-r">install.packages(&quot;randomForest&quot;)
 library(randomForest)
@@ -289,15 +293,24 @@ table(predTrain, TrainSet$Condition)
 <li>
 <ul>
 <li><a href="#definition">Definition</a></li>
+<li><a href="#algorithm">Algorithm</a>
+<ul>
 <li><a href="#splitting-criteria">Splitting Criteria</a></li>
-<li><a href="#algorithm">Algorithm</a></li>
-<li><a href="#visualization-of-bagging">Visualization of Bagging</a></li>
-<li><a href="#visualization-of-bootstrapping">Visualization of Bootstrapping</a></li>
-<li><a href="#building-a-forest-with-ensenble">Building a Forest with Ensenble</a></li>
-<li><a href="#advantage-of-random-forest">Advantage of Random Forest</a></li>
-<li><a href="#disadvantage-of-random-forest">Disadvantage of Random Forest</a></li>
-<li><a href="#apply-in-python">Apply in Python</a></li>
-<li><a href="#apply-in-r">Apply in R</a></li>
+<li><a href="#regression-or-classification">Regression or Classification</a></li>
+<li><a href="#bagging">Bagging</a></li>
+<li><a href="#bootstrapping">Bootstrapping</a></li>
+<li><a href="#ensemble">Ensemble</a></li>
+</ul></li>
+<li><a href="#pros-vs-cons">Pros vs Cons</a>
+<ul>
+<li><a href="#pros">Pros</a></li>
+<li><a href="#cons">Cons</a></li>
+</ul></li>
+<li><a href="#application">Application</a>
+<ul>
+<li><a href="#python">Python</a></li>
+<li><a href="#r">R</a></li>
+</ul></li>
 </ul></li>
 </ul>
 </nav>
