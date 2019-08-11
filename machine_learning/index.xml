@@ -6,7 +6,7 @@
     <description>Recent content in Machine_learnings on Big Data Time</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 11 Aug 2019 12:29:01 -0700</lastBuildDate>
+    <lastBuildDate>Sun, 11 Aug 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://wasai001.github.io/machine_learning/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>Random Forest</title>
       <link>https://wasai001.github.io/machine_learning/randomforest/</link>
-      <pubDate>Sun, 11 Aug 2019 12:29:01 -0700</pubDate>
+      <pubDate>Sun, 11 Aug 2019 00:00:00 +0000</pubDate>
       
       <guid>https://wasai001.github.io/machine_learning/randomforest/</guid>
       <description>Introduction of Random Forest (RF) Algorithm  With excellent performance on all eight metrics, calibrated boosted trees were the best learning algorithm overall. Random forests are close second, followed by uncalibrated bagged trees, calibrated SVMs, and un- calibrated neural nets.
